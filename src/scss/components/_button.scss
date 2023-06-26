@@ -1,15 +1,1 @@
-@use './../utils' as *;
-
-.button {
-  border: 0;
-  font-size: rem(14px);
-  border-radius: rem(8px);
-  
-  &--fillBlue {
-    background: $primary;
-    color: $background;
-  }
-  &--fillGray {
-    background: $categoryButton;
-  }
-}
+// button.scss
