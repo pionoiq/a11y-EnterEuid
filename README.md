@@ -6,9 +6,9 @@ https://github.com/minomad/a11y-EnterEuid
   <img src="https://github.com/201810902/study/assets/55738193/add95e49-4032-412e-937c-ece95daee4a9" width=30px></h3>
 
 <b>팀 A11Y</b><br />
-강경민<br /> 
-장다은<br /> 
- 윤 진<br /> 
+강경민<br /> <a href="https://github.com/minomad">@minomad</a><br />
+장다은<br /> <a href="https://github.com/jin62413">@jin62413</a><br />
+ 윤 진<br /><a href="https://github.com/pionoiq">@pionoiq</a><br />
 김경아 <a href="http://gitgub.com/201810902">@201810902</a><br />
 
 <br/>
