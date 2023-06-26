@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnterEuid-로그인 인증문자</title>
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+  <body>
+    <section class="loginContainer">
+      <a href="/views/login.html"><img src="/images/icon-direction-left.svg" alt="back" /></a>
+      <form action="/views/main.html" class="loginForm" method="get">
+        <fieldset>
+          <legend>로그인 인증문자</legend>
+          <label for="userNumber" class="a11yHidden">휴대폰 번호</label>
+          <input
+            type="text"
+            id="userNumber"
+            name="userNumber"
+            class="loginForm__number"
+            placeholder="010 1234 5678"
+            onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+            maxlength="11"
+            disabled
+          />
+          <div class="verifyWrap">
+            <label class="a11yHidden">인증문자 받기</label>
+            <input type="button" class="loginForm__verify verifyWrap__repeat" value="인증문자 다시 받기(04분 57초)" />
+            <label for="verify" class="a11yHidden">인증번호 입력</label>
+            <input
+              type="text"
+              id="verify"
+              name="verify"
+              class="loginForm__number"
+              placeholder="인증번호 입력"
+              onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+              maxlength="6"
+              required
+            />
+          </div>
+          <button type="submit" class="button button__verify" aria-label="동의하고 시작하기 버튼">동의하고 시작하기</button>
+          <a href="#" class="findVerify">인증번호가 오지 않아요?</a>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
