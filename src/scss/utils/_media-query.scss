@@ -1,1 +1,10 @@
-// media-query.scss
+@use "./../utils/mixin" as *;
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    @include containerMax;
+  }
+}
