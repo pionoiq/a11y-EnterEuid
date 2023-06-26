@@ -1,0 +1,61 @@
+@use './../utils' as *;
+@use './../components' as *;
+
+//로그인 페이지
+.loginContainer {
+  @include containerMax(320px);
+  @include marginY(30px, 0);
+}
+
+//로그인 타이틀
+.loginTitle {
+  font-size: $fs18;
+  font-weight: $fw600;
+  line-height: $lh150;
+  @include marginY(12px, 6px);
+}
+
+.loginDescription {
+  font-size: $fs11;
+  line-height: $lh160;
+}
+
+//로그인 폼
+.loginForm {
+  @include marginY(25px, 0px);
+
+  &__number {
+    @include paddingX(10px, 0);
+    width: 100%;
+    height: rem(38px);
+    border-width: rem(1px);
+    border-radius: rem(4px);
+    &:focus {
+      outline-color: $primary;
+    }
+  }
+
+  &__verify {
+    @include marginY(12px, 12px);
+    width: 100%;
+    height: rem(38px);
+    font-weight: $fw600;
+    line-height: $lh150;
+    color: $contentSecondary;
+    background: $background;
+    border: 0.5px solid $contentSecondary;
+    border-radius: rem(4px);
+  }
+}
+
+//찾기
+.findWrap {
+  font-size: $fs11;
+  line-height: $lh160;
+  @include flexbox($justify: center);
+
+  &__link {
+    text-decoration: underline;
+    @include marginX(13px, 0);
+  }
+}
