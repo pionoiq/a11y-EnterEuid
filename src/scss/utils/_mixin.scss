@@ -1,1 +1,41 @@
-// mixin.scss
+@use './../utils/unit' as *;
+
+// 컨테이너 믹스인
+@mixin containerMax($max-width: 320px) {
+  width: rem($max-width);
+  @include autoMargin;
+}
+
+// padding, margin 관련 믹스인
+@mixin padding($spacing) {
+  padding: rem($spacing);
+}
+
+@mixin paddingX($pl, $pr) {
+  padding-left: rem($pl);
+  padding-right: rem($pr);
+}
+
+@mixin paddingY($pt, $pb) {
+  padding-top: rem($pt);
+  padding-bottom: rem($pb);
+}
+
+@mixin margin($spacing) {
+  margin:($spacing);
+}
+
+@mixin marginX($ml, $mr) {
+  margin-left: rem($ml);
+  margin-right: rem($mr);
+}
+
+@mixin marginY($mt, $mb) {
+  margin-top: rem($mt);
+  margin-bottom: rem($mb);
+}
+
+@mixin autoMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
