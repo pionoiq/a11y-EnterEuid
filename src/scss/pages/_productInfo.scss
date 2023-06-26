@@ -157,6 +157,8 @@
   }
 
   .chat {
+    width: rem(77px);
+    height: rem(37px);
     @include paddingX(14px, 14px);
     @include paddingY(8px, 8px);
     border-radius: rem(8px);
