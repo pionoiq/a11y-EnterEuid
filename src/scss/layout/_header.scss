@@ -1,1 +1,17 @@
-// header.scss
+@use "./../utils" as *;
+
+.shareHeader {
+  @include paddingX(18px, 18px);
+  @include paddingY(8px, 8px);
+  @include flexbox;
+  height: rem(36px);
+  border-bottom: 1px solid $gray;
+
+  .back {
+    margin-right: rem(8px);
+  }
+
+  .share {
+    margin-right: rem(12px);
+  }
+}
