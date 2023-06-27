@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>프로필</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/style/index.css" />
   </head>
   <body>
@@ -12,6 +18,7 @@
         <a href="#"> <img src="/images/profile.png" alt="user photo" /></a>
         <p class="userPhoto__name">EUID*** <span class="userPhoto__number">4기</span></p>
         <p class="userPhoto__answer">답변 35</p>
+        <a href="#" class="userPhoto__edit"><img src="/images/icon-pencil.svg" alt="사진 변경하기" /></a>
       </section>
 
       <section class="userMenu">
@@ -38,44 +45,74 @@
       </section>
 
       <section class="userState">
-        <h2 class="userState__title">
-          열정온도
-        </h2>
+        <h2 class="userState__title">열정온도</h2>
         <div class="userState__temperature">
-          <span>첫 온도 36.5</span>
+          <span class="userState__temperature--first">첫 온도 36.5&#8451;</span>
           <span class="userState__temperature--color">41.2&#8451;</span>
           <span>😃</span>
         </div>
         <hr class="userState__hr" />
       </section>
 
+      <!-- 추가 작업 필요함 -->
+      <section class="userLike">받은 좋아요 응답률</section>
+
       <section class="userProduct">
-        <ul>
-          <li><a href="/">활동배지 10개</a></li>
-          <li><a href="/">판매상품 3개</a></li>
-          <li><a href="/">받은 매너 평가</a></li>
-          <li>시간 약속을 잘지켜요</li>
-          <li>친절하고 매너가 좋아요</li>
-          <li>제가 있는 곳까지 와서 거래했어요.</li>
-          <li><a href="/">받은 거래 후기</a></li>
+        <ul class="userProduct__list">
+          <li>
+            <a href="#" class="product__report">
+              <span>활동배지 10개</span>
+              <span class="fas fa-angle-right" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li class="userProduct__list--boder">
+            <a href="#" class="product__report">
+              <span>판매상품 3개</span>
+              <span class="fas fa-angle-right" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product__report">
+              <span>받은 매너 평가</span>
+              <span class="fas fa-angle-right" aria-hidden="true"></span>
+            </a>
+          </li>
         </ul>
       </section>
 
+      <section class="userManner">
+        <ol class="userMannerList">
+          <li class="userMannerList__evaluate">
+            <img src="/images/profile-icon-people.svg" alt="icon people"/>
+            <span class="userMannerList__Text"> 시간 약속을 잘지켜요 </span>
+          </li>
+          <li class="userMannerList__evaluate">
+            <img src="/images/profile-icon-people.svg" alt="icon people"/>
+            <span class="userMannerList__Text"> 친절하고 매너가 좋아요 </span>
+          </li>
+          <li class="userMannerList__evaluate">
+            <img src="/images/profile-icon-people.svg" alt="icon people"/>
+            <span class="userMannerList__Text"> 제가 있는 곳까지 와서 거래했어요. </span>
+          </li>
+        </ol>
+      </section>
+      
       <section class="userReview">
+        <a href="/">받은 거래 후기</a>
         <h3>으갸갸갹</h3>
-        <span>구매자 인천광역시 계양구 4개월전</span>
+        <span>구매자 인천광역시 계양구 <strong>4개월전</strong></span>
         <p>감사감사 감사합니다.</p>
         <a href="#">more</a>
       </section>
 
       <section class="userSetting">
-        <ul>
-          <li><a href="#">보관 질문</a></li>
-          <li><a href="#">설정</a></li>
-          <li><a href="#">지식 iN 공식 블로그</a></li>
-          <li><a href="#">서비스 정보</a></li>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">로그아웃</a></li>
+        <ul class="userSetting__list">
+          <li class="userSetting__link"><a href="#">보관 질문</a></li>
+          <li class="userSetting__link"><a href="#">설정</a></li>
+          <li class="userSetting__link"><a href="#">지식 iN 공식 블로그</a></li>
+          <li class="userSetting__link"><a href="#">서비스 정보</a></li>
+          <li class="userSetting__link"><a href="#">공지사항</a></li>
+          <li class="userSetting__link"><a href="#" class="userName">로그아웃</a></li>
         </ul>
       </section>
     </main>

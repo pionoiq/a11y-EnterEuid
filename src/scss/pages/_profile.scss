@@ -9,6 +9,7 @@
 // 프로필 사진
 .userPhoto {
   @include flexbox(column, center, center);
+  position: relative;
 
   &__name {
     font-size: $fs18;
@@ -28,6 +29,16 @@
     font-size: $fs11;
     line-height: $lh160;
     color: $contentSecondary;
+  }
+
+  &__edit{
+    position: absolute;
+    right: 130px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -53,6 +64,7 @@
 
 // 매너상태
 .userState {
+  position: relative;
   &__title {
     font-size: $fs11;
 
@@ -67,7 +79,13 @@
 
   &__temperature {
     @include flexbox($justify: flex-end);
-    
+
+    &--first {
+      @include paddingX(0, 80px);
+      color: $contentSecondary;
+      font-size: $fs11;
+    }
+
     &--color {
       color: $secondary;
       font-weight: $fw600;
@@ -82,27 +100,83 @@
     background: $contentSecondary;
 
     &::after {
+      content: url('/images/polygon.svg');
+      position: absolute;
+      top: 30px;
+      left: 125px;
+    }
+
+    &::before {
       content: '\00a0';
       background: $primary;
       width: rem(119px);
-      height: rem(7px);
+      height: rem(7.263px);
       border-radius: 10px;
       position: absolute;
+      margin-top: -1px;
     }
   }
 }
 
-// 유저 판매상태
+// 받은 좋아요
+.userLike {
+  background: #9af687;
+}
+
+// 유저 판매링크
 .userProduct {
-  background: #8f8df6;
+  &__list--boder {
+    border-top: 0.3px solid $contentSecondary;
+    border-bottom: 0.3px solid $contentSecondary;
+  }
+}
+
+// 매너평가
+.userMannerList {
+  &__evaluate {
+    @include marginY(14px, 14px);
+    @include paddingY(4px, 4px);
+    position: relative;
+    counter-reset: 10;
+
+    &::before{
+      content: counter(number);
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      font-weight: $fw600;
+      line-height: $lh150;
+    }
+  }
+
+  &__Text {
+    @include marginX(30px, 0);
+    @include padding(8px);
+    line-height: $lh160;
+    border-radius: 0px 8px 8px 8px;
+    background: $tertiary;
+    
+  }
 }
 
 // 리뷰
 .userReview {
-  background: #2d2a8150;
 }
 
 // 설정
 .userSetting {
-  background: #b958b650;
+  line-height: $lh160;
+  @include padding(18px);
+
+  &__link{
+    @include paddingY(0, 18px);
+  }
+  position: relative;
+}
+
+.userName::after{
+  content: 'kimchihi';
+  color: $secondary;
+  position: absolute;
+  right: 0;
 }
