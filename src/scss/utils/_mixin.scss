@@ -11,6 +11,14 @@
   padding: rem($spacing);
 }
 
+@mixin paddingAll($pt, $pr, $pb, $pl) {
+  padding: rem($pt) rem($pr) rem($pb) rem($pl);
+}
+
+@mixin paddingXY($ptb, $plr) {
+  padding: rem($ptb) rem($plr);
+}
+
 @mixin paddingX($pl, $pr) {
   padding-left: rem($pl);
   padding-right: rem($pr);
@@ -23,6 +31,14 @@
 
 @mixin margin($spacing) {
   margin: ($spacing);
+}
+
+@mixin marginAll($mt, $mr, $mb, $ml) {
+  margin: rem($mt) rem($mr) rem($mb) rem($ml);
+}
+
+@mixin marginXY($mtb, $mlr) {
+  margin: rem($mtb) rem($mlr);
 }
 
 @mixin marginX($ml, $mr) {
@@ -63,12 +79,7 @@
 }
 
 // flexbox 믹스인
-@mixin flexbox(
-  $direction: row,
-  $justify: space-between,
-  $items: stretch,
-  $wrap: nowrap
-) {
+@mixin flexbox($direction: row, $justify: space-between, $items: stretch, $wrap: nowrap) {
   display: flex;
   flex-flow: $direction $wrap;
   justify-content: $justify;
@@ -76,12 +87,7 @@
 }
 
 // 그리드 믹스인
-@mixin gridbox(
-  $column-count: 1,
-  $column-width: 1fr,
-  $row-gap: 0,
-  $column-gap: 0
-) {
+@mixin gridbox($column-count: 1, $column-width: 1fr, $row-gap: 0, $column-gap: 0) {
   display: grid;
   grid-template-columns: repeat($column-count, $column-width);
   grid-template-rows: auto;
