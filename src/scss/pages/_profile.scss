@@ -166,6 +166,7 @@
 
 // 매너평가
 .userMannerList {
+  @include marginX(10px, 0);
   counter-reset: number 11;
   &__evaluate {
     @include marginY(14px, 14px);
@@ -243,4 +244,5 @@
   color: $secondary;
   position: absolute;
   right: 0;
+  margin-right: rem(12px);
 }
