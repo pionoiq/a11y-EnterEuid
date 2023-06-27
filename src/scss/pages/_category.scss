@@ -1,0 +1,71 @@
+@use './../utils' as *;
+@use './../components' as *;
+
+.categoryContainer {
+  @include containerMax(320px);
+  @include flexbox(column, center, center);
+}
+
+.searchForm {
+  border: none;
+  width: 100%;
+}
+
+.input{
+  width: 100%; 
+}
+.announce_category{
+  font-size: 18px;
+}
+.button_Group {
+  @include flexbox(space-between nowrap);
+  // display: flex;
+  padding: 16px;
+  gap: 8px;
+}
+
+.button__select {
+  // display: flex;
+  width: 100%;
+  height: rem(36px);
+  font-weight: $fw700;
+  line-height: $lh140;
+  text-align: center;
+  margin-top: 3px;
+  padding: 5px;
+  
+}
+
+.button__category {
+  width: 143px;
+  height: 61px;
+  border: none;
+  background: $gray;
+  color: $black;
+
+  &:focus {
+    background-color: $primary;
+    color: $white;
+
+    img {
+      content: url(./../../images/check.svg);
+    }
+  }
+
+  &:active {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:visited {
+    background-color: $gray;
+    color: $black;
+  }
+}
+
+.button__save {
+  width: 100%;
+  height: rem(36px);
+  font-weight: $fw700;
+  line-height: $lh140;
+}
