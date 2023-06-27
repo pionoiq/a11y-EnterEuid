@@ -1,0 +1,39 @@
+@use './../utils' as *;
+
+//인증문자 페이지
+.verifyWrap {
+  position: relative;
+
+  &::after {
+    content: '어떤 경우에도 타인에게 공유하지마세요!';
+    position: absolute;
+    top: rem(105px);
+    left: 0px;
+    font-size: $fs11;
+    color: $contentSecondary;
+  }
+
+  &__repeat{
+    color: $black;
+  }
+}
+
+.button {
+  &__verify {
+    @include marginY(34px, 15px);
+    color: $background;
+    background: $contentSecondary;
+    font-weight: $fw700;
+    width: 100%;
+    height: rem(44px);
+  }
+}
+
+.findVerify {
+  display: block;
+  text-align: center;
+  font-size: $fs11;
+  line-height: $lh150;
+  color: $contentSecondary;
+  text-decoration: underline;
+}

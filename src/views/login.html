@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnterEuid-로그인</title>
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+  <body>
+    <section class="loginContainer">
+      <a href="/index.html"><img src="/images/icon-direction-left.svg" alt="back" /></a>
+      <h1 class="loginTitle">
+        안녕하세요!
+        <br />
+        휴대폰 번호로 로그인해주세요.
+      </h1>
+      <p class="loginDescription">휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.</p>
+      <form action="/views/login2.html" class="loginForm" method="get">
+        <fieldset>
+          <legend>로그인</legend>
+          <label for="userNumber" class="a11yHidden">휴대폰 번호</label>
+          <input
+            type="text"
+            id="userNumber"
+            name="userNumber"
+            class="loginForm__number"
+            placeholder="휴대폰 번호 (-없이 숫자만 입력)"
+            onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+            maxlength="11"
+            required
+          />
+          <label class="a11yHidden">인증문자 받기</label>
+          <input type="submit" class="loginForm__verify" value="인증문자 받기" />
+          <ul class="findWrap">
+            <li>휴대폰 번호가 변경되었나요?</li>
+            <li class="findWrap__link"><a href="#">이메일로 계정찾기</a></li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
