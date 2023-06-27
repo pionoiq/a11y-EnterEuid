@@ -22,7 +22,7 @@
     @include paddingY(2px, 2px);
   }
 
-  &__answer{
+  &__answer {
     font-size: $fs11;
     line-height: $lh160;
     color: $contentSecondary;
@@ -31,8 +31,20 @@
 
 .userMenu {
   @include marginY(15px, 0);
-  &__list{
-    @include flexbox;
+  @include paddingX(31px, 30px);
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+
+.userMenu__link {
+  font-size: $fs11;
+  font-weight: $fw600;
+  &__Text{
+    margin-left: -5px;
   }
 }
 
