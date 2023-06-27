@@ -2,7 +2,7 @@
 @use "./../layout/navigation" as *;
 
 /* 메인 */
-main {
+.mainPage {
   overflow: hidden;
   margin: auto;
 }
@@ -36,40 +36,22 @@ main {
   }
   &__title {
     margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: $fs18;
+    font-weight: $fw600;
     @include flexbox(column);
   }
   &__more {
-    font-size: 10.5px;
+    font-size: $fs11;
     font-weight: 300;
   }
   .counterBar {
     position: absolute;
     top: 70%;
     left: 20px;
-    font-size: 10.5px;
+    font-size: $fs11;
     &__bar {
       margin-right: 5px;
     }
-  }
-}
-
-/* 메인 카테고리 */
-.mainCategory {
-  background: $primary;
-  width: 100%;
-  &__list {
-    @include flexbox($justify: space-around);
-  }
-  &__link {
-    display: block;
-    font-size: 14px;
-    padding: 11.5px 10px;
-    color: $contentTertiary;
-  }
-  &__link:hover {
-    color: $white;
   }
 }
 
@@ -83,7 +65,7 @@ main {
     padding: 12px;
   }
   &__item {
-    font-size: 10.5px;
+    font-size: $fs11;
     @include flexbox(row, center);
   }
   &__item img {
@@ -92,8 +74,8 @@ main {
   &__description {
     width: 138px;
     @include flexbox(column);
-    font-weight: 600;
-    line-height: 160%;
+    font-weight: $fw600;
+    line-height: $lh160;
     margin: 12px 0 4px 0;
   }
   &__category {
@@ -106,8 +88,4 @@ main {
   &__Separator {
     padding: 0 5px;
   }
-}
-
-.nav {
-  @include nav;
 }
