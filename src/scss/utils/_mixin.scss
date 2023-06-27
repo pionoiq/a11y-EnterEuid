@@ -58,7 +58,7 @@
 
 // 이미지 반응형 믹스인
 @mixin profileRatio($w: 1, $h: 1) {
-  aspect-ratio: $w / $h;
+  aspect-ratio: calc($w / $h);
 }
 
 @mixin respons($width: max-width, $height: auto) {
