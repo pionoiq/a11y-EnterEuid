@@ -1,0 +1,53 @@
+@use './../utils' as *;
+
+.profileContainer {
+  @include containerMax(320px);
+  margin-top: 50px;
+}
+
+.userPhoto {
+  @include flexbox(column, center, center);
+
+  &__name {
+    font-size: $fs18;
+    font-weight: $fw600;
+  }
+
+  &__number {
+    font-size: $fs11;
+    color: $secondary;
+    border-radius: 50px;
+    border: 0.7px solid $secondary;
+    @include paddingX(4px, 4px);
+    @include paddingY(2px, 2px);
+  }
+
+  &__answer{
+    font-size: $fs11;
+    line-height: $lh160;
+    color: $contentSecondary;
+  }
+}
+
+.userMenu {
+  @include marginY(15px, 0);
+  &__list{
+    @include flexbox;
+  }
+}
+
+.userState {
+  background: #cfff93;
+}
+
+.userProduct {
+  background: #8f8df6;
+}
+
+.userReview {
+  background: #2d2a8150;
+}
+
+.userSetting {
+  background: #b958b650;
+}
