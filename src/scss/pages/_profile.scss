@@ -1,10 +1,12 @@
 @use './../utils' as *;
 
+// 프로필 페이지
 .profileContainer {
   @include containerMax(320px);
   margin-top: 50px;
 }
 
+// 프로필 사진
 .userPhoto {
   @include flexbox(column, center, center);
 
@@ -29,6 +31,7 @@
   }
 }
 
+// 프로필 메뉴 수정필요
 .userMenu {
   @include marginY(15px, 0);
   @include paddingX(31px, 30px);
@@ -43,23 +46,63 @@
 .userMenu__link {
   font-size: $fs11;
   font-weight: $fw600;
-  &__Text{
+  &__Text {
     margin-left: -5px;
   }
 }
 
+// 매너상태
 .userState {
-  background: #cfff93;
+  &__title {
+    font-size: $fs11;
+
+    &::after {
+      content: url('/images/icon-information.svg');
+      position: absolute;
+      @include marginX(1px, 0);
+    }
+  }
+
+  @include padding(12px);
+
+  &__temperature {
+    @include flexbox($justify: flex-end);
+    
+    &--color {
+      color: $secondary;
+      font-weight: $fw600;
+      line-height: $lh150;
+    }
+  }
+
+  &__hr {
+    width: rem(295px);
+    height: rem(8.25px);
+    border-radius: 10px;
+    background: $contentSecondary;
+
+    &::after {
+      content: '\00a0';
+      background: $primary;
+      width: rem(119px);
+      height: rem(7px);
+      border-radius: 10px;
+      position: absolute;
+    }
+  }
 }
 
+// 유저 판매상태
 .userProduct {
   background: #8f8df6;
 }
 
+// 리뷰
 .userReview {
   background: #2d2a8150;
 }
 
+// 설정
 .userSetting {
   background: #b958b650;
 }
