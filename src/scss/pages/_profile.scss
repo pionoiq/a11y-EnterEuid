@@ -2,12 +2,11 @@
 
 // 프로필 페이지
 .profileContainer {
-  @include containerMax(320px);
-  margin-top: 50px;
+  @include marginY(42px, 0);
 }
 
 // 프로필 사진
-.userPhoto {
+.profileWrap {
   @include flexbox(column, center, center);
   position: relative;
 
@@ -31,40 +30,35 @@
     color: $contentSecondary;
   }
 
-  &__edit{
+  &__edit {
     position: absolute;
-    right: 130px;
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
+    @include marginX(50px, 0);
     border-radius: 10px;
     background: $white;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
 }
 
-// 프로필 메뉴 수정필요
-.userMenu {
-  @include marginY(15px, 0);
+// 프로필 메뉴
+.menuWrap {
+  @include marginY(15px, 18px);
   @include paddingX(31px, 30px);
 
   &__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
-}
-
-.userMenu__link {
-  font-size: $fs11;
-  font-weight: $fw600;
-  &__Text {
-    margin-left: -5px;
+    @include flexbox();
+    text-align: center;
+    font-size: $fs11;
+    font-weight: $fw600;
   }
 }
 
 // 매너상태
 .userState {
   position: relative;
+  @include padding(12px);
+
   &__title {
     font-size: $fs11;
 
@@ -75,16 +69,8 @@
     }
   }
 
-  @include padding(12px);
-
   &__temperature {
     @include flexbox($justify: flex-end);
-
-    &--first {
-      @include paddingX(0, 80px);
-      color: $contentSecondary;
-      font-size: $fs11;
-    }
 
     &--color {
       color: $secondary;
@@ -93,8 +79,15 @@
     }
   }
 
+  &__first {
+    color: $contentSecondary;
+    font-size: $fs11;
+    position: absolute;
+    top: rem(23px);
+    left: rem(95px);
+  }
+
   &__hr {
-    width: rem(295px);
     height: rem(8.25px);
     border-radius: 10px;
     background: $contentSecondary;
@@ -102,8 +95,8 @@
     &::after {
       content: url('/images/polygon.svg');
       position: absolute;
-      top: 30px;
-      left: 125px;
+      top: rem(30px);
+      left: rem(125px);
     }
 
     &::before {
@@ -119,8 +112,48 @@
 }
 
 // 받은 좋아요
-.userLike {
-  background: #9af687;
+.likeWrap {
+  font-size: $fs11;
+  line-height: $lh160;
+  @include paddingXY(16px, 20px);
+  @include gridbox(4, auto);
+  grid-template-areas:
+    'heart like chat reply'
+    '. satisfy . short';
+
+  &__heart {
+    grid-area: heart;
+    text-align: end;
+    @include paddingX(0, 5px);
+  }
+
+  &__like {
+    grid-area: like;
+    @include marginAll(-4px, 36px, 0, 0);
+  }
+
+  &__percent {
+    font-weight: $fw600;
+  }
+
+  &__satisfy {
+    grid-area: satisfy;
+  }
+
+  &__reply {
+    grid-area: reply;
+    @include marginY(-4px, 0);
+  }
+
+  &__short {
+    grid-area: short;
+  }
+
+  &__chat {
+    grid-area: chat;
+    text-align: end;
+    @include paddingX(0, 5px);
+  }
 }
 
 // 유저 판매링크
@@ -133,17 +166,18 @@
 
 // 매너평가
 .userMannerList {
+  counter-reset: number 11;
   &__evaluate {
     @include marginY(14px, 14px);
     @include paddingY(4px, 4px);
     position: relative;
-    counter-reset: 10;
 
-    &::before{
+    &::before {
       content: counter(number);
+      counter-increment: number -1;
       position: absolute;
       top: 0px;
-      left: 20px;
+      left: rem(20px);
       font-weight: $fw600;
       line-height: $lh150;
     }
@@ -155,12 +189,42 @@
     line-height: $lh160;
     border-radius: 0px 8px 8px 8px;
     background: $tertiary;
-    
   }
 }
 
 // 리뷰
 .userReview {
+  @include paddingAll(14px, 10px, 20px, 10px);
+  display: flow-root;
+  position: relative;
+  font-size: $fs11;
+  line-height: $lh160;
+  border-bottom: 0.3px solid $contentSecondary;
+
+  &__photo {
+    float: left;
+    @include paddingX(0, 9px);
+  }
+
+  &__id {
+    font-weight: $fw600;
+  }
+
+  &__info {
+    @include paddingXY(3px, 0);
+    color: $contentSecondary;
+  }
+
+  &__reply {
+    @include marginX(37px, 0);
+    font-size: 14px;
+  }
+
+  &__more {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
 }
 
 // 설정
@@ -168,13 +232,13 @@
   line-height: $lh160;
   @include padding(18px);
 
-  &__link{
+  &__link {
     @include paddingY(0, 18px);
   }
   position: relative;
 }
 
-.userName::after{
+.userName::after {
   content: 'kimchihi';
   color: $secondary;
   position: absolute;

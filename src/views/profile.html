@@ -14,31 +14,31 @@
   </head>
   <body>
     <main class="profileContainer">
-      <section class="userPhoto">
-        <a href="#"> <img src="/images/profile.png" alt="user photo" /></a>
-        <p class="userPhoto__name">EUID*** <span class="userPhoto__number">4기</span></p>
-        <p class="userPhoto__answer">답변 35</p>
-        <a href="#" class="userPhoto__edit"><img src="/images/icon-pencil.svg" alt="사진 변경하기" /></a>
+      <section class="profileWrap">
+        <a href="#"><img src="/images/profile.png" alt="user photo" /></a>
+        <p class="profileWrap__name">EUID*** <span class="profileWrap__number">4기</span></p>
+        <p class="profileWrap__answer">답변 35</p>
+        <a href="#" class="profileWrap__edit"><img src="/images/icon-pencil.svg" alt="사진 변경하기" /></a>
       </section>
 
-      <section class="userMenu">
-        <ul class="userMenu__list">
-          <li class="userMenu__item">
-            <a href="#" class="userMenu__link">
+      <section class="menuWrap">
+        <ul class="menuWrap__list">
+          <li>
+            <a href="#" class="menuWrap__link">
               <img src="/images/icon-qa.svg" alt="" /><br />
-              <p class="userMenu__link__Text">나의 Q&amp;A</p>
-            </a>
-          </li>
-          <li class="userMenu__item">
-            <a href="#" class="userMenu__link">
-              <img src="/images/icon-profile.svg" alt="" /><br />
-              나의 프로필
+              <span>나의 Q&amp;A</span>
             </a>
           </li>
           <li>
-            <a href="#" class="userMenu__link">
+            <a href="#" class="menuWrap__link">
+              <img src="/images/icon-profile.svg" alt="" /><br />
+              <span>나의 프로필</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menuWrap__link">
               <img src="/images/icon-alram-bell.svg" alt="" /><br />
-              내소식
+              <span>내소식</span>
             </a>
           </li>
         </ul>
@@ -47,15 +47,21 @@
       <section class="userState">
         <h2 class="userState__title">열정온도</h2>
         <div class="userState__temperature">
-          <span class="userState__temperature--first">첫 온도 36.5&#8451;</span>
           <span class="userState__temperature--color">41.2&#8451;</span>
           <span>😃</span>
         </div>
+        <span class="userState__first">첫 온도 36.5&#8451;</span>
         <hr class="userState__hr" />
       </section>
 
-      <!-- 추가 작업 필요함 -->
-      <section class="userLike">받은 좋아요 응답률</section>
+      <section class="likeWrap">
+        <span class="far fa-heart likeWrap__heart" aria-hidden="true"></span>
+        <p class="likeWrap__like">받은 좋아요 <span class="likeWrap__percent">100%</span></p>
+        <p class="likeWrap__satisfy">11개 중 11명이 만족</p>
+        <span class="far fa-comment likeWrap__chat"></span>
+        <p class="likeWrap__reply">응답률 -%</p>
+        <p class="likeWrap__short">표시될 만큼 충분히 채팅하지 않았어요.</p>
+      </section>
 
       <section class="userProduct">
         <ul class="userProduct__list">
@@ -83,26 +89,34 @@
       <section class="userManner">
         <ol class="userMannerList">
           <li class="userMannerList__evaluate">
-            <img src="/images/profile-icon-people.svg" alt="icon people"/>
+            <img src="/images/profile-icon-people.svg" alt="icon people" />
             <span class="userMannerList__Text"> 시간 약속을 잘지켜요 </span>
           </li>
           <li class="userMannerList__evaluate">
-            <img src="/images/profile-icon-people.svg" alt="icon people"/>
+            <img src="/images/profile-icon-people.svg" alt="icon people" />
             <span class="userMannerList__Text"> 친절하고 매너가 좋아요 </span>
           </li>
           <li class="userMannerList__evaluate">
-            <img src="/images/profile-icon-people.svg" alt="icon people"/>
+            <img src="/images/profile-icon-people.svg" alt="icon people" />
             <span class="userMannerList__Text"> 제가 있는 곳까지 와서 거래했어요. </span>
           </li>
         </ol>
       </section>
-      
-      <section class="userReview">
-        <a href="/">받은 거래 후기</a>
-        <h3>으갸갸갹</h3>
-        <span>구매자 인천광역시 계양구 <strong>4개월전</strong></span>
-        <p>감사감사 감사합니다.</p>
-        <a href="#">more</a>
+
+      <section class="reviewWrap">
+        <a href="#" class="product__report userProduct__list--boder">
+          <span>받은 거래 후기 1</span>
+          <span class="fas fa-angle-right" aria-hidden="true"></span>
+        </a>
+        <article class="userReview">
+          <div class="userReview__photo">
+            <img src="/images/Rectangle.svg" alt="user photo" />
+          </div>
+          <h3 class="userReview__id">으갸갸갹</h3>
+          <p class="userReview__info">구매자 인천광역시 계양구 4개월전</p>
+          <p class="userReview__reply">감사감사 감사합니다.</p>
+          <a href="#" class="userReview__more"><img src="/images/more-gray.svg" alt="더보기" /></a>
+        </article>
       </section>
 
       <section class="userSetting">
