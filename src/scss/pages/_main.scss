@@ -59,8 +59,8 @@
 .seniorsStory {
   width: 100%;
   &__list {
-    // @include gridbox(2, 1fr, 28px, 12px);
-    @include flexbox($wrap: wrap);
+    @include gridbox(2, 1fr, 28px, 12px);
+    // @include flexbox($wrap: wrap);
     gap: 28px 12px;
     padding: 12px;
   }
