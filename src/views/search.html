@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="search">
+        <h1 class="a11yHidden">검색 하기</h1>
+        <form action="#" method="post" class="searchForm">
+          <fieldset>
+            <legend class="a11yHidden">메세지 보내기</legend>
+            <div class="searchForm__container">
+              <button
+                type="button"
+                class="searchForm__back"
+                aria-label="뒤로 가기 버튼"
+              ></button>
+              <label for="inputSearch" class="a11yHidden">검색 창</label>
+              <input
+                type="text"
+                id="inputSearch"
+                placeholder="창천동 근처에서 검색"
+                name="inputSearch"
+                class="searchForm__input"
+              />
+            </div>
+            <button
+              type="submit"
+              class="doneButton"
+              onclick="location.href = '#'"
+            >
+              완료
+            </button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="recommend">
+        <h2 class="recommend__title">친구들이 많이 찾고 있어요!</h2>
+        <div class="recommend__buttonWrap">
+          <button class="recommend__button" onclick="location.href = '#'">
+            노트북
+          </button>
+          <button class="recommend__button" onclick="location.href = '#'">
+            노트북 거치대
+          </button>
+          <button class="recommend__button" onclick="location.href = '#'">
+            키보드
+          </button>
+          <button class="recommend__button" onclick="location.href = '#'">
+            마우스
+          </button>
+          <button class="recommend__button" onclick="location.href = '#'">
+            헤드셋
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
