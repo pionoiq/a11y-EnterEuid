@@ -6,26 +6,31 @@
   @include flexbox(column, center, center);
 }
 
+ 
+.search__Form{
+  @include containerMax(320px);
+  padding: 0px 0px 40px 0px;
+}
+
 .searchForm {
   border: none;
   width: 100%;
+  
 }
 
 .input{
   width: 100%; 
 }
-.announce_category{
+.announce__category{
   font-size: 18px;
 }
-.button_Group {
+.button__Group {
   @include flexbox();
-  // display: flex;
   padding: 16px;
   gap: 8px;
 }
 
 .button__select {
-  // display: flex;
   width: 100%;
   height: rem(36px);
   font-weight: $fw700;
@@ -48,7 +53,7 @@
     color: $white;
 
     img {
-      content: url(./../../images/check.svg);
+      content: url("./../../images/check.svg");
     }
   }
 

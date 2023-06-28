@@ -83,7 +83,7 @@
       display: block;
       @include respons($height: 100%);
       border-radius: 50%;
-      @include fit(contain);
+      @include fit;
     }
 
     &__nickname {
@@ -100,7 +100,7 @@
   }
 
   &__manner {
-    @include gridbox($column-count: auto, $column-gap: rem(5px));
+    @include gridbox($column-count: auto-fill, $column-gap: rem(5px));
     place-items: center end;
     align-content: center;
 
