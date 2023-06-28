@@ -1,0 +1,78 @@
+@use './../utils' as *;
+@use './../components' as *;
+
+.chatListContainer{
+}
+
+.backWrapper{
+  &__chatHead{
+    font-size: $fs18;
+    font-weight: $fw600;
+    line-height: $lh150;
+  }
+}
+
+.moreWrapper{
+  &__bell{
+    width: 20px;
+    height: 20px;
+  }
+}
+.selling {
+  border-bottom: 0.3px solid $contentSecondary;
+
+  &__info {
+    @include flexbox($justify: flex-start);
+    gap: 8px;
+    @include paddingX(12px, 12px);
+    @include paddingY(12px, 6px);
+
+    &__preview {
+      width: rem(34px);
+      height: rem(34px);
+    }
+
+    &__previewImg {
+      @include profileRatio;
+      @include respons;
+      @include fit;
+    }
+
+    &__wrapping {
+      font-size: $fs11;
+      @include flexbox($direction: column, $justify: space-around);
+    }
+
+    &__state {
+      font-weight: $fw600;
+      margin-right: rem(5px);
+    }
+
+    &__price {
+      font-weight: $fw600;
+    }
+
+    &__ellipsis {
+      width: 142px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.chatList {
+  border-bottom: 0.3px solid $contentSecondary;
+  position: relative;
+
+
+  &__text-gray {
+    color: $contentSecondary;
+  }
+
+  &__image{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+  }
+}
