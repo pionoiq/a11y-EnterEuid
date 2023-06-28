@@ -41,6 +41,7 @@
   }
 }
 
+/* 헤더 타이틀  */
 .headerTitle {
   @include flexbox($direction: column, $justify: center, $items: center);
 
@@ -50,5 +51,32 @@
 
   &__info {
     font-size: $fs11;
+  }
+}
+
+/* 메인 헤더 */
+.mainHeader {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 20px;
+    // cursor: pointer;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__local {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 6px;
+  }
+  &__toggle {
+    width: 18px;
+    height: 18px;
+  }
+  &__hamburger {
+    margin: 0 7px;
   }
 }
