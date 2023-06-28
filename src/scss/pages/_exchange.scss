@@ -1,10 +1,14 @@
 @use "./../utils" as *;
+@use "../components/button" as *;
 
 .exchange {
+  @include navBottom;
   &__item {
-    border-bottom: 1px solid $gray;
     position: relative;
     @include padding(12);
+  }
+  &__item:not(:last-child) {
+    border-bottom: 1px solid $gray;
   }
   &__link {
     @include flexbox($justify: flex-start, $items: center);

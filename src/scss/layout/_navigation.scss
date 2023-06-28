@@ -3,16 +3,19 @@
 /* 내비게이션 바 */
 .nav {
   .nav_list {
-    position: fixed;
-    bottom: 0;
-    background: $background;
     width: 100%;
+    @include containerMax;
+    background: $background;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     @include flexbox;
     @include paddingAll(8, 12, 24, 12);
   }
+
   .nav_link {
     @include flexbox($direction: column, $items: center);
-    @include paddingXY(12, 8);
   }
   .nav_link img {
     width: rem(20px);

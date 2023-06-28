@@ -15,3 +15,27 @@
     margin-right: rem(12px);
   }
 }
+
+.mainHeader {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__local {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 6px;
+  }
+  &__toggle {
+    width: 18px;
+    height: 18px;
+  }
+  &__localSearch {
+    margin: 0 7px;
+  }
+}
