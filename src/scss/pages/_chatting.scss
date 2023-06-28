@@ -199,6 +199,12 @@
       flex-grow: 1;
     }
 
+    &__text:focus {
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+    }
+
     &__emoji {
       background: url("./../../images/chat-icon-smile.svg") no-repeat;
       width: rem(20px);
