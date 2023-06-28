@@ -4,14 +4,13 @@
 .nav {
   .nav_list {
     width: 100%;
-    @include containerMax;
     background: $background;
     position: fixed;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     @include flexbox;
-    @include paddingAll(8, 12, 24, 12);
+    @include paddingAll(8, 20, 24, 20);
   }
 
   .nav_link {
