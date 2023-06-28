@@ -61,8 +61,8 @@ Figma의 HTML, SASS를 웹 접근성을 준수하여 EnterEuid의 웹페이지�
 <br/><br/>
 
 **<h3>협업 방법</h3>**
-  - 깃허브의 project 관리를 통해 계획과 진척도 확인
-  - Github을 통해 함께 버전 관리
+  - Github의 project 관리를 통해 계획과 진척도 확인
+  - Git을 통한 버전 관리
 
 <br/><br/>
 
@@ -136,6 +136,39 @@ Figma의 HTML, SASS를 웹 접근성을 준수하여 EnterEuid의 웹페이지�
 <br/><br/>
 
 **<h3>화면 구성 🖥️</h3>**
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/e90921ab-e08e-4d2d-bdce-0977a78c8242" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/07e622ae-b9c2-4316-a712-64ea57afed95" width="250px"> 
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/453b1cad-1761-4eff-969e-074e26b9701e" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/344bca99-3264-40f8-a115-edfef1155458" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/9aa051e8-fd65-4feb-80ce-99cd7173ff2e" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/8b7532a7-2e40-4c80-a83f-24a711039d18" width="250px">
+
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/ae86578f-5122-40c7-b173-b64233df3101" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/6b7a58a4-848b-43ae-a872-1d6c21097a5f" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/a3f02fe2-008d-4b0e-9a23-185fb6df01d9" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/28ed8e2a-359a-4de7-914a-bd2d39699087" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/8948b123-daaf-43bf-a537-781538e50264" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/7423f20c-960f-4190-874a-63e5c1033e4c" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/36917f2e-d2cf-48d0-919a-7ebc3b7cf488" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/894aae15-a37b-4ddc-b15a-d9c5e7402a53" width="250px">
+
+
+
+
 
 <br/><br/>
 
