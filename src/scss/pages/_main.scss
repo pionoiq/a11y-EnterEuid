@@ -65,7 +65,7 @@
     padding: 12px;
   }
   &__item {
-    font-size: $fs11;
+    font-size: rem(10.5px);
     @include flexbox(row, center);
   }
   &__item img {

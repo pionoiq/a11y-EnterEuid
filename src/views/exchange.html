@@ -16,9 +16,27 @@
     <link rel="stylesheet" href="/style/index.css" />
   </head>
   <body>
+    <!-- 메인 해더 -->
+    <header class="mainHeader">
+      <h1 class="a11yHidden">메인 헤더 바</h1>
+      <ul class="mainHeader__list">
+        <li class="mainHeader__item">
+          <h2 class="mainHeader__local">남가좌제2동</h2>
+          <div role="button" class="mainHeader__toggle">
+            <img src="../images/main-icon-direction.svg" alt="지역 더보기" />
+          </div>
+        </li>
+        <li class="mainHeader__item">
+          <a href="#" class="mainHeader__localSearch"> <img src="../images/search.svg" alt="지역 검색" /></a>
+          <span role="button" tabindex="0" class="mainHeader__hamburger"> <img src="../images/main-icon-hamburger.svg" alt="햄버거 버튼" /></span>
+          <span role="button" tabindex="0" class="mainHeader__alarm"><img src="../images/main-icon-alram-bell.svg" alt="알람버튼" /></span>
+        </li>
+      </ul>
+    </header>
     <main class="mainExchange">
+      <!-- 메인 콘텐츠 카테고리 -->
       <section class="mainCategory">
-        <h1 class="a11yHidden">메인 콘텐츠 카테고리</h1>
+        <h2 class="a11yHidden">메인 콘텐츠 카테고리</h2>
         <ul class="mainCategory__list">
           <li class="mainCategory__item"><a href="main.html" class="mainCategory__link">선배님 스토리</a></li>
           <li class="mainCategory__item"><a href="exchange.html" class="mainCategory__link c-exchange">기기 거래</a></li>
@@ -26,8 +44,9 @@
           <li class="mainCategory__item"><a href="#" class="mainCategory__link">같이 해요</a></li>
         </ul>
       </section>
+      <!-- 기기 거래 -->
       <section class="exchange">
-        <h1 class="a11yHidden">기기 거래</h1>
+        <h2 class="a11yHidden">기기 거래</h2>
         <ul class="exchange__list">
           <li class="exchange__item">
             <a href="#" class="exchange__link">
@@ -206,6 +225,7 @@
             </button>
           </li>
         </ul>
+        <!-- 카테고리 더보기 버튼 -->
         <article class="subjectCategory">
           <button class="subjectCategory__button">
             <span class="a11yHidden">기기 카테고리 더보기</span>
@@ -230,22 +250,22 @@
         </article>
       </section>
       <nav class="nav">
-        <h1 class="a11yHidden">내비게이션 바</h1>
+        <h2 class="a11yHidden">내비게이션 바</h2>
         <ul class="nav_list">
           <li class="nav_item">
-            <a href="/main.html" class="nav_link"><img src="../images/icon-home.svg" alt="홈" /><span class="nav_name">홈</span></a>
+            <a href="main.html" class="nav_link"><img src="../images/icon-home.svg" alt="홈" /><span class="nav_name">홈</span></a>
           </li>
           <li class="nav_item">
-            <a href="" class="nav_link"><img src="../images/common-icon-file.svg" alt="게시판" /><span class="nav_name">게시판</span></a>
+            <a href="board.html" class="nav_link"><img src="../images/common-icon-file.svg" alt="게시판" /><span class="nav_name">게시판</span></a>
           </li>
           <li class="nav_item">
-            <a href="/exchange.html" class="nav_link"><img src="../images/icon-full-map.svg" alt="내 근처" /><span class="nav_name">내 근처</span></a>
+            <a href="exchange.html" class="nav_link"><img src="../images/icon-full-map.svg" alt="내 근처" /><span class="nav_name">내 근처</span></a>
           </li>
           <li class="nav_item">
-            <a href="#" class="nav_link"><img src="../images/common-icon-my.svg" alt="채팅" /><span class="nav_name">채팅</span></a>
+            <a href="chating.html" class="nav_link"><img src="../images/common-icon-my.svg" alt="채팅" /><span class="nav_name">채팅</span></a>
           </li>
           <li class="nav_item">
-            <a href="#" class="nav_link"><img src="../images/common-icon-chat.svg" alt="나의 이듬" /><span class="nav_name">나의 이듬</span></a>
+            <a href="profile.html" class="nav_link"><img src="../images/common-icon-chat.svg" alt="나의 이듬" /><span class="nav_name">나의 이듬</span></a>
           </li>
         </ul>
       </nav>

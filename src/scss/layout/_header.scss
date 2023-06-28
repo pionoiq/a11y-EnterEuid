@@ -20,11 +20,13 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 6px 20px;
+    // cursor: pointer;
   }
   &__item {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   &__local {
     font-size: 18px;
@@ -35,7 +37,7 @@
     width: 18px;
     height: 18px;
   }
-  &__localSearch {
+  &__hamburger {
     margin: 0 7px;
   }
 }
