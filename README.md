@@ -66,6 +66,69 @@ Figma의 HTML, SASS를 웹 접근성을 준수하여 EnterEuid의 웹페이지�
 
 <br/><br/>
 
+<h3>파일 트리 구조 📁</h3>
+```
+📦src
+ ┣ 📂images
+ ┣ 📂scss
+ ┃ ┣ 📂base
+ ┃ ┃ ┣ 📜_default.scss
+ ┃ ┃ ┣ 📜_index.scss
+ ┃ ┃ ┣ 📜_normalize.scss
+ ┃ ┃ ┗ 📜_reset.scss
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📜_button.scss
+ ┃ ┃ ┗ 📜_index.scss
+ ┃ ┣ 📂layout
+ ┃ ┃ ┣ 📜_header.scss
+ ┃ ┃ ┣ 📜_index.scss
+ ┃ ┃ ┗ 📜_navigation.scss
+ ┃ ┣ 📂pages
+ ┃ ┃ ┣ 📜_board.scss
+ ┃ ┃ ┣ 📜_category.scss
+ ┃ ┃ ┣ 📜_chatList.scss
+ ┃ ┃ ┣ 📜_chatting.scss
+ ┃ ┃ ┣ 📜_exchange.scss
+ ┃ ┃ ┣ 📜_home.scss
+ ┃ ┃ ┣ 📜_index.scss
+ ┃ ┃ ┣ 📜_login.scss
+ ┃ ┃ ┣ 📜_login2.scss
+ ┃ ┃ ┣ 📜_main.scss
+ ┃ ┃ ┣ 📜_productInfo.scss
+ ┃ ┃ ┣ 📜_profile.scss
+ ┃ ┃ ┗ 📜_search.scss
+ ┃ ┣ 📂utils
+ ┃ ┃ ┣ 📜_a11y.scss
+ ┃ ┃ ┣ 📜_color.scss
+ ┃ ┃ ┣ 📜_font.scss
+ ┃ ┃ ┣ 📜_index.scss
+ ┃ ┃ ┣ 📜_media-query.scss
+ ┃ ┃ ┣ 📜_mixin.scss
+ ┃ ┃ ┗ 📜_unit.scss
+ ┃ ┗ 📜index.scss
+ ┣ 📂style
+ ┃ ┣ 📜index.css
+ ┃ ┗ 📜index.css.map
+ ┣ 📂views
+ ┃ ┣ 📜board.html
+ ┃ ┣ 📜category.html
+ ┃ ┣ 📜chatList.html
+ ┃ ┣ 📜chatting.html
+ ┃ ┣ 📜exchange.html
+ ┃ ┣ 📜login.html
+ ┃ ┣ 📜login2.html
+ ┃ ┣ 📜main.html
+ ┃ ┣ 📜productInfo.html
+ ┃ ┣ 📜profile.html
+ ┃ ┣ 📜search.html
+ ┃ ┣ 📜signUp.html
+ ┃ ┣ 📜signUp2.html
+ ┃ ┗ 📜template.html
+ ┗ 📜index.html
+```
+
+<br/><br/>
+
 <h3>화면 구성 🖥️</h3>
 
 <br/><br/>
@@ -77,32 +140,4 @@ Figma의 HTML, SASS를 웹 접근성을 준수하여 EnterEuid의 웹페이지�
 김경아: 수업시간에 들으면서 코드를 따라 치면서 배우는 것과 프로젝트를 하면서 직접 코드를 짜보는게 정말 많이 다르다는 점을 느꼈습니다. 미리미리 배운 내용을 활용해보면서 공부해야겠다고 생각했습니다.<br /><br />
 
 ## <span id='8'>8. 폴더 구조</span>
-```
-│README.md
-│package.json
-│package-lock.json
-│.gitignore
-└─🗃️src
-    ├─🗂️images
-    │  
-    ├─🗂️scss
-    │  
-    │  ├─📁base
-    │  ├─📁components
-    │  ├─📁layouy
-    │  ├─📁pages
-    │  ├─📁utils
-    │  ├─📁form
-    │
-    └─🗂️views
-        ├─
-        ├─📁
-        ├─📁
-        ├─📁
-        ├─📁
-        ├─📁
-        ├─📁
-        ├─📁
-        ├─📁
-        └─📁
-```
+
