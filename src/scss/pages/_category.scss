@@ -18,7 +18,7 @@
   font-size: 18px;
 }
 .button_Group {
-  @include flexbox(space-between nowrap);
+  @include flexbox();
   // display: flex;
   padding: 16px;
   gap: 8px;

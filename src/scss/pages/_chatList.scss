@@ -2,7 +2,21 @@
 @use './../components' as *;
 
 .chatListContainer{
-  @include containerMax(320px);
+}
+
+.backWrapper{
+  &__chatHead{
+    font-size: $fs18;
+    font-weight: $fw600;
+    line-height: $lh150;
+  }
+}
+
+.moreWrapper{
+  &__bell{
+    width: 20px;
+    height: 20px;
+  }
 }
 .selling {
   border-bottom: 0.3px solid $contentSecondary;
@@ -49,12 +63,16 @@
 
 .chatList {
   border-bottom: 0.3px solid $contentSecondary;
+  position: relative;
+
 
   &__text-gray {
     color: $contentSecondary;
   }
-}
 
-.squareImg{
-  align-self: flex-end;
+  &__image{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+  }
 }
