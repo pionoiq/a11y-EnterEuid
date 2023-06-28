@@ -1,4 +1,4 @@
-@use './../utils' as *;
+@use "./../utils" as *;
 
 // 프로필 페이지
 .profileContainer {
@@ -63,7 +63,7 @@
     font-size: $fs11;
 
     &::after {
-      content: url('/images/icon-information.svg');
+      content: url("/images/icon-information.svg");
       position: absolute;
       @include marginX(1px, 0);
     }
@@ -93,14 +93,14 @@
     background: $contentSecondary;
 
     &::after {
-      content: url('/images/polygon.svg');
+      content: url("/images/polygon.svg");
       position: absolute;
       top: rem(30px);
       left: rem(125px);
     }
 
     &::before {
-      content: '\00a0';
+      content: "\00a0";
       background: $primary;
       width: rem(119px);
       height: rem(7.263px);
@@ -118,8 +118,8 @@
   @include paddingXY(16px, 20px);
   @include gridbox(4, auto);
   grid-template-areas:
-    'heart like chat reply'
-    '. satisfy . short';
+    "heart like chat reply"
+    ". satisfy . short";
 
   &__heart {
     grid-area: heart;
@@ -240,7 +240,7 @@
 }
 
 .userName::after {
-  content: 'kimchihi';
+  content: "kimchihi";
   color: $secondary;
   position: absolute;
   right: 0;

@@ -1,8 +1,9 @@
-@use './../utils' as *;
-@use './../components' as *;
+@use "./../utils" as *;
+@use "./../components" as *;
 
 .boardFrame {
   @include containerMax(320px);
+  @include navBottom;
 }
 
 .button__span {
@@ -38,7 +39,7 @@
 
   &__tag {
     display: inline-block;
-    background: #C4C7D2;
+    background: #c4c7d2;
     font-weight: 600;
     color: $white;
     padding: 0px 4px;
@@ -94,7 +95,6 @@
     position: absolute;
     right: 12px;
     top: 12px;
-
   }
 
   .postSub {
@@ -104,7 +104,7 @@
 
   &__info {
     color: $contentTertiary;
-    font-size: 10.530px;
+    font-size: 10.53px;
     line-height: 160%;
   }
 }
