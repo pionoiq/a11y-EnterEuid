@@ -2,8 +2,10 @@
 
 /* 내비게이션 바 */
 .nav {
-  .nav_list {
+  width: 100%;
+  .nav__list {
     width: 100%;
+    max-width: 768px;
     background: $background;
     position: fixed;
     left: 50%;
@@ -13,14 +15,14 @@
     @include paddingAll(8, 20, 24, 20);
   }
 
-  .nav_link {
+  .nav__link {
     @include flexbox($direction: column, $items: center);
   }
-  .nav_link img {
+  .nav__link img {
     width: rem(20px);
     height: rem(20px);
   }
-  .nav_name {
+  .nav__name {
     font-size: $fs11;
     line-height: $lh160;
   }

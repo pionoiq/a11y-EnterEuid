@@ -79,12 +79,7 @@
 }
 
 // flexbox 믹스인
-@mixin flexbox(
-  $direction: row,
-  $justify: space-between,
-  $items: stretch,
-  $wrap: nowrap
-) {
+@mixin flexbox($direction: row, $justify: space-between, $items: stretch, $wrap: nowrap) {
   display: flex;
   flex-flow: $direction $wrap;
   justify-content: $justify;
@@ -92,12 +87,7 @@
 }
 
 // 그리드 믹스인
-@mixin gridbox(
-  $column-count: 1,
-  $column-width: 1fr,
-  $row-gap: 0,
-  $column-gap: 0
-) {
+@mixin gridbox($column-count: 1, $column-width: 1fr, $row-gap: 0, $column-gap: 0) {
   display: grid;
   grid-template-columns: repeat($column-count, $column-width);
   grid-template-rows: auto;
