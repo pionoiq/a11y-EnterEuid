@@ -167,13 +167,13 @@ Figma의 HTML, SASS를 웹 접근성을 준수하여 EnterEuid의 웹페이지�
 
 <img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/28ed8e2a-359a-4de7-914a-bd2d39699087" width="250px">
 
-<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/2db165a7-d885-4c60-951c-108e9a93c3d0" width="250px">
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/d69db71a-3a21-4692-b2a6-97646ebdcda6" width="250px">
 
-<img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/7423f20c-960f-4190-874a-63e5c1033e4c" width="250px">
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/fee24560-ce73-4b97-85b4-57eecb1e1816" width="250px">
+
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/fe8a7b5f-1195-4583-bb64-f092a6410cc0" width="250px">
 
 <img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/36917f2e-d2cf-48d0-919a-7ebc3b7cf488" width="250px">
-
-<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/3f22764c-b203-429a-bcff-84ebb37a8d1d" width="250px">
 
 <img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/8948b123-daaf-43bf-a537-781538e50264" width="250px">
 
