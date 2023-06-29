@@ -171,7 +171,7 @@ Figma의 HTML, SASS를 웹 접근성을 준수하여 EnterEuid의 웹페이지�
 
 <img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/7423f20c-960f-4190-874a-63e5c1033e4c" width="250px" height="489px">
 
-<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/fe8a7b5f-1195-4583-bb64-f092a6410cc0" width="250px" height="489px">
+<img src="https://github.com/minomad/a11y-EnterEuid/assets/131448929/fe8a7b5f-1195-4583-bb64-f092a6410cc0" width="250px" height="520px">
 
 <img src="https://github.com/minomad/a11y-EnterEuid/assets/55738193/36917f2e-d2cf-48d0-919a-7ebc3b7cf488" width="250px">
 
