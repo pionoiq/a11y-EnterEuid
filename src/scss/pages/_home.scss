@@ -1,1 +1,53 @@
-// home.scss
+@use './../utils' as *;
+@use './../components' as *;
+
+//시작 페이지
+.startContainer {
+  @include containerMax(320px);
+  @include flexbox(column, center, center);
+  color: $primary;
+}
+
+//로고
+.logo {
+  @include marginY(224px, 50px);
+}
+
+//텍스트
+.headline {
+  text-align: center;
+
+  &__title {
+    font-size: $fs18;
+    font-weight: $fw700;
+    line-height: $lh140;
+    @include marginY(0, 8px);
+  }
+}
+
+//시작하기 버튼
+.button {
+  &__start {
+    @include marginY(172px, 26px);
+    @include paddingY(8px, 8px);
+    width: 100%;
+    height: rem(36px);
+    font-weight: $fw700;
+    line-height: $lh140;
+  }
+}
+
+//로그인
+.loginWrap {
+  @include flexbox;
+  font-size: $fs11;
+
+  &__info {
+    color: $contentSecondary;
+  }
+
+  &__link {
+    font-weight: $fw600;
+    @include marginX(13px, 0);
+  }
+}

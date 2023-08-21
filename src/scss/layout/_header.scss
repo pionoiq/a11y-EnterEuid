@@ -1,1 +1,84 @@
-// header.scss
+@use "./../utils" as *;
+
+.shareHeader {
+  @include paddingX(18px, 18px);
+  @include paddingY(8px, 8px);
+  @include flexbox;
+  height: rem(36px);
+  background: $background;
+  border-bottom: 1px solid $gray;
+
+  .back {
+    margin-right: rem(8px);
+  }
+
+  .share {
+    margin-right: rem(12px);
+  }
+}
+
+.callHeader {
+  @include paddingX(15px, 15px);
+  @include paddingY(2px, 2px);
+  @include flexbox($items: center);
+  height: rem(38px);
+  border-bottom: 1px solid $gray;
+
+  &__column {
+    width: 33%;
+  }
+
+  .back {
+    margin-right: rem(8px);
+  }
+
+  .call {
+    margin-right: rem(7px);
+  }
+
+  .moreWrapper {
+    @include flexbox($justify: flex-end);
+  }
+}
+
+/* 헤더 타이틀  */
+.headerTitle {
+  @include flexbox($direction: column, $justify: center, $items: center);
+
+  &__name {
+    font-weight: $fw600;
+  }
+
+  &__info {
+    font-size: $fs11;
+  }
+}
+
+/* 메인 헤더 */
+.mainHeader {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 20px;
+    // cursor: pointer;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__local {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 6px;
+  }
+  &__toggle {
+    width: 18px;
+    height: 18px;
+  }
+  &__hamburger {
+    margin: 0 7px;
+    width: 26px;
+    height: 26px;
+  }
+}

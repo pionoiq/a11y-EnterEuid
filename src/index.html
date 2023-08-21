@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>인덱스 페이지</title>
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-  <link rel="stylesheet" href="/style/index.css" />
-</head>
-
-<body>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a11y-EnterEuid</title>
+    <link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+  <body>
+    <section class="startContainer">
+      <h1 class="a11yHidden">엔터이듬</h1>
+      <figure class="logo">
+        <img src="images/logo.svg" alt="euid logo" />
+        <figcaption class="a11yHidden" aria-hidden="true">이듬 로고</figcaption>
+      </figure>
+      <article class="headline">
+        <h2 class="headline__title">당신 곁에 엔터이듬</h2>
+        <p class="headline__description">With EUID's 함께 성장하기</p>
+        <p class="headline__description">함께 배우고 적용하며 성장해보세요!</p>
+      </article>
+      <button type="submit" class="button button--fillBlue button__start" aria-label="시작하기 버튼" onclick="location.href = '/views/category.html'">시작하기</button>
+      <ul class="loginWrap">
+        <li class="loginWrap__info">이미 계정이 있나요?</li>
+        <li>
+          <a href="/views/login.html" class="loginWrap__link">로그인</a>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>

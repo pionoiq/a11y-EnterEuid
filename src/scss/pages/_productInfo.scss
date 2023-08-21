@@ -1,0 +1,236 @@
+@use "./../utils" as *;
+
+// 판매글
+.product {
+  @include gridbox;
+  grid-template-areas:
+    "img"
+    "profile"
+    "info"
+    "report";
+  border-bottom: 0.3px solid $contentSecondary;
+
+  &__detail {
+    justify-self: center;
+  }
+
+  &__detailImg {
+    @include respons;
+    display: block;
+  }
+
+  &__info {
+    @include paddingX(12px, 12px);
+    @include paddingY(12px, 20px);
+    @include flexbox($direction: column, $justify: flex-start);
+    border-bottom: 0.3px solid $contentSecondary;
+
+    &__title {
+      font-size: $fs18;
+      font-weight: $fw600;
+    }
+
+    &__category {
+      font-size: $fs11;
+      color: $contentSecondary;
+      margin-top: 4px;
+    }
+
+    &__content {
+      margin-top: 13px;
+      height: 108px;
+      line-height: $lh160;
+    }
+
+    &__check {
+      font-size: $fs11;
+      color: $contentSecondary;
+    }
+  }
+
+  &__report {
+    font-weight: $fw600;
+    @include paddingX(15px, 15px);
+    @include paddingY(18px, 18px);
+    @include flexbox;
+  }
+}
+
+.profile {
+  width: 100%;
+  height: rem(64px);
+}
+
+// 판매자 프로필
+.seller {
+  @include flexbox($justify: space-between, $items: center);
+  @include marginY(10px, 10px);
+  @include marginX(10px, 10px);
+
+  &__info {
+    @include gridbox($column-count: 2, $column-gap: rem(6px));
+    grid-template-areas:
+      "profileImg name"
+      "profileImg location";
+
+    &__profile {
+      width: rem(40px);
+      @include profileRatio;
+      grid-area: profileImg;
+    }
+
+    &__profileImg {
+      display: block;
+      @include respons($height: 100%);
+      border-radius: 50%;
+      @include fit;
+    }
+
+    &__nickname {
+      font-weight: $fw600;
+      grid-area: name;
+      align-self: center;
+    }
+
+    &__locate {
+      font-size: $fs11;
+      grid-area: location;
+      align-self: center;
+    }
+  }
+
+  &__manner {
+    @include gridbox($column-count: auto-fill, $column-gap: rem(5px));
+    place-items: center end;
+    align-content: center;
+
+    &__temp {
+      font-weight: $fw600;
+      color: $secondary;
+    }
+
+    &__emoji {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: $fs11;
+      color: $contentSecondary;
+      grid-column: 1 / 3;
+    }
+  }
+}
+
+// 북마크, 채팅하기 등등
+.bookmarkChat {
+  background: $background;
+  @include paddingX(12px, 12px);
+  @include paddingY(12px, 38px);
+  @include flexbox;
+  position: sticky;
+  bottom: 0;
+
+  .function {
+    @include flexbox;
+
+    &__bookmark {
+      border: none;
+      background: none;
+      @include paddingX(0, 13px);
+    }
+
+    &__priceWrapper {
+      @include flexbox($direction: column, $justify: flex-start);
+      border-left: 0.3px solid $contentSecondary;
+      padding-left: rem(13px);
+    }
+
+    .price {
+      font-weight: $fw600;
+    }
+
+    .suggest {
+      font-size: $fs11;
+      font-weight: $fw600;
+      color: $secondary;
+    }
+  }
+
+  .chat {
+    width: rem(77px);
+    height: rem(37px);
+    @include paddingX(14px, 14px);
+    @include paddingY(8px, 8px);
+    border-radius: rem(8px);
+    border: 0;
+    background: $secondary;
+    color: $background;
+    font-weight: $fw600;
+  }
+}
+
+.price {
+  float: left;
+}
+
+.suggest {
+  float: left;
+}
+
+// 추천 게시물
+.with {
+  &__title {
+    font-weight: $fw600;
+    @include paddingX(12px, 12px);
+    @include paddingY(14px, 14px);
+  }
+
+  &__container {
+    @include flexbox($direction: row, $justify: space-between, $wrap: wrap);
+    gap: 16px;
+    @include paddingX(14px, 14px);
+    @include paddingY(4px, 16px);
+  }
+
+  &__item {
+    @include flexbox($direction: column, $items: flex-start);
+
+    &__preview {
+      width: rem(138px);
+      height: rem(104px);
+    }
+
+    &__previewImg {
+      @include respons($height: 100%);
+      @include fit;
+      border-radius: rem(8px);
+    }
+
+    &__sub {
+      margin-top: 12px;
+      font-size: $fs11;
+    }
+
+    &__price {
+      font-size: $fs11;
+      font-weight: $fw600;
+    }
+  }
+}
+
+// product 그리드 이름
+.product__detail {
+  grid-area: img;
+}
+
+.product__info {
+  grid-area: info;
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.product__report {
+  grid-area: report;
+}

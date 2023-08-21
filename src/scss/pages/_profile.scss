@@ -1,0 +1,248 @@
+@use "./../utils" as *;
+
+// 프로필 페이지
+.profileContainer {
+  @include marginY(42px, 0);
+}
+
+// 프로필 사진
+.profileWrap {
+  @include flexbox(column, center, center);
+  position: relative;
+
+  &__name {
+    font-size: $fs18;
+    font-weight: $fw600;
+  }
+
+  &__number {
+    font-size: $fs11;
+    color: $secondary;
+    border-radius: 50px;
+    border: 0.7px solid $secondary;
+    @include paddingX(4px, 4px);
+    @include paddingY(2px, 2px);
+  }
+
+  &__answer {
+    font-size: $fs11;
+    line-height: $lh160;
+    color: $contentSecondary;
+  }
+
+  &__edit {
+    position: absolute;
+    width: rem(15px);
+    height: rem(15px);
+    @include marginX(50px, 0);
+    border-radius: 10px;
+    background: $white;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// 프로필 메뉴
+.menuWrap {
+  @include marginY(15px, 18px);
+  @include paddingX(31px, 30px);
+
+  &__list {
+    @include flexbox();
+    text-align: center;
+    font-size: $fs11;
+    font-weight: $fw600;
+  }
+}
+
+// 매너상태
+.userState {
+  position: relative;
+  @include padding(12px);
+
+  &__title {
+    font-size: $fs11;
+
+    &::after {
+      content: url("/images/icon-information.svg");
+      position: absolute;
+      @include marginX(1px, 0);
+    }
+  }
+
+  &__temperature {
+    @include flexbox($justify: flex-end);
+
+    &--color {
+      color: $secondary;
+      font-weight: $fw600;
+      line-height: $lh150;
+    }
+  }
+
+  &__first {
+    color: $contentSecondary;
+    font-size: $fs11;
+    position: absolute;
+    top: rem(23px);
+    left: rem(95px);
+  }
+
+  &__hr {
+    height: rem(8.25px);
+    border-radius: 10px;
+    background: $contentSecondary;
+
+    &::after {
+      content: url("/images/polygon.svg");
+      position: absolute;
+      top: rem(30px);
+      left: rem(125px);
+    }
+
+    &::before {
+      content: "\00a0";
+      background: $primary;
+      width: rem(119px);
+      height: rem(7.263px);
+      border-radius: 10px;
+      position: absolute;
+      margin-top: -1px;
+    }
+  }
+}
+
+// 받은 좋아요
+.likeWrap {
+  font-size: $fs11;
+  line-height: $lh160;
+  @include paddingXY(16px, 20px);
+  @include gridbox(4, auto);
+  grid-template-areas:
+    "heart like chat reply"
+    ". satisfy . short";
+
+  &__heart {
+    grid-area: heart;
+    text-align: end;
+    @include paddingX(0, 5px);
+  }
+
+  &__like {
+    grid-area: like;
+    @include marginAll(-4px, 36px, 0, 0);
+  }
+
+  &__percent {
+    font-weight: $fw600;
+  }
+
+  &__satisfy {
+    grid-area: satisfy;
+  }
+
+  &__reply {
+    grid-area: reply;
+    @include marginY(-4px, 0);
+  }
+
+  &__short {
+    grid-area: short;
+  }
+
+  &__chat {
+    grid-area: chat;
+    text-align: end;
+    @include paddingX(0, 5px);
+  }
+}
+
+// 유저 판매링크
+.userProduct {
+  &__list--boder {
+    border-top: 0.3px solid $contentSecondary;
+    border-bottom: 0.3px solid $contentSecondary;
+  }
+}
+
+// 매너평가
+.userMannerList {
+  @include marginX(10px, 0);
+  counter-reset: number 11;
+  &__evaluate {
+    @include marginY(14px, 14px);
+    @include paddingY(4px, 4px);
+    position: relative;
+
+    &::before {
+      content: counter(number);
+      counter-increment: number -1;
+      position: absolute;
+      top: 0px;
+      left: rem(20px);
+      font-weight: $fw600;
+      line-height: $lh150;
+    }
+  }
+
+  &__Text {
+    @include marginX(30px, 0);
+    @include padding(8px);
+    line-height: $lh160;
+    border-radius: 0px 8px 8px 8px;
+    background: $tertiary;
+  }
+}
+
+// 리뷰
+.userReview {
+  @include paddingAll(14px, 10px, 20px, 10px);
+  display: flow-root;
+  position: relative;
+  font-size: $fs11;
+  line-height: $lh160;
+  border-bottom: 0.3px solid $contentSecondary;
+
+  &__photo {
+    float: left;
+    @include paddingX(0, 9px);
+  }
+
+  &__id {
+    font-weight: $fw600;
+  }
+
+  &__info {
+    @include paddingXY(3px, 0);
+    color: $contentSecondary;
+  }
+
+  &__reply {
+    @include marginX(37px, 0);
+    font-size: 14px;
+  }
+
+  &__more {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
+}
+
+// 설정
+.userSetting {
+  line-height: $lh160;
+  @include padding(18px);
+
+  &__link {
+    @include paddingY(0, 18px);
+  }
+  position: relative;
+}
+
+.userName::after {
+  content: "kimchihi";
+  color: $secondary;
+  position: absolute;
+  right: 0;
+  margin-right: rem(12px);
+}

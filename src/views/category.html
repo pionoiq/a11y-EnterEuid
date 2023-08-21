@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style/index.css" />
+  <title>카테고리</title>
+</head>
+
+<body>
+  <section class="search categoryContainer">
+    <h3 class="a11yHidden">카테고리</h3>
+      <form action="#" method="post" class="searchForm">
+        <fieldset>
+          <legend class="a11yHidden">메세지 보내기</legend>
+          <div class="searchForm__container">
+            <button
+              type="button"
+              class="searchForm__back"
+              aria-label="뒤로 가기 버튼"
+            ></button>
+            <label for="inputSearch" class="a11yHidden">검색 창</label>
+            <input
+              type="text"
+              id="inputSearch"
+              placeholder="분야 (이름)로 검색 (ex. 프론트)"
+              name="inputSearch"
+              class="searchForm__input"
+            />
+          </div>
+        </fieldset>
+      </form>
+    <div class="button button--fillBlue button__select">
+      관심분야 선택하기
+    </div>
+    <div class="button__Group">
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">프로그래밍</span>
+          <span>프론트엔드</span>
+        </button>
+      </div>
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">프로그래밍</span>
+          <span>백엔드</span>
+        </button>
+      </div>
+    </div>
+    <div class="button__Group">
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">프로그래밍</span>
+          <span>리액트</span>
+        </button>
+      </div>
+      <div class="item">
+        <button class="button button--fillBlue button__category">
+          <span class="categoryType">프로그래밍</span>
+          <span>풀스택</span>
+        </button>
+      </div>
+    </div>
+    <div class="button__Group">
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">프로그래밍</span>
+          <span>알고리즘</span>
+        </button>
+      </div>
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">프로그래밍</span>
+          <span>기초지식</span>
+        </button>
+      </div>
+    </div>
+    <div class="button__Group">
+      <div class="item">
+        <button class="button button--fillBlue button__category">
+          <span class="categoryType">디자인</span>
+          <span>UI 디자인</span>
+        </button>
+      </div>
+      <div class="item">
+        <button class="button button--fillBlue button__category">
+          <span class="categoryType">디자인</span>
+          <span>UX 디자인</span>
+        </button>
+      </div>
+    </div>
+    <div class="button__Group">
+      <div class="item">
+        <button class="button button--fillBlue button__category">
+          <span class="categoryType">디자인</span>
+          <span>UI&middot;UX</span>
+        </button>
+      </div>
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">데이터</span>
+          <span>데이터분석</span>
+        </button>
+      </div>
+    </div>
+    <div class="button__Group">
+      <div class="item">
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">데이터</span>
+          <span>UX 통계분석</span>
+        </button>
+      </div>
+      <div>
+        <button class="button button--fillGray button__category">
+          <span class="categoryType">데이터</span>
+          <span>시각화</span>
+        </button>
+      </div>
+    </div>
+    <button type="submit" class="button button--fillBlue button__save" onclick="location.href = '/views/signUp.html'">
+      이대로 저장할래요
+    </button>
+  </section>
+</body>
+
+</html>

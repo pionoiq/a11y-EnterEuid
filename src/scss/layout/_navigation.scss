@@ -1,1 +1,58 @@
-// navigation.scss
+@use "./../utils" as *;
+
+/* 내비게이션 바 */
+.nav {
+  width: 100%;
+  .nav__list {
+    width: 100%;
+    max-width: 768px;
+    background: $background;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    @include flexbox;
+    @include paddingAll(8, 20, 24, 20);
+  }
+
+  .nav__link {
+    @include flexbox($direction: column, $items: center);
+  }
+  .nav__link img {
+    width: rem(20px);
+    height: rem(20px);
+  }
+  .nav__name {
+    font-size: $fs11;
+    line-height: $lh160;
+  }
+}
+
+/* 메인 카테고리 바 */
+.mainCategory {
+  background: $primary;
+  width: 100%;
+  &__list {
+    @include flexbox($justify: space-around);
+  }
+  &__link {
+    display: block;
+    padding: 11.5px 10px;
+    color: $contentTertiary;
+  }
+  &__link:hover {
+    color: $white;
+  }
+  .c-exchange {
+    color: $white;
+  }
+  .c-seniorsStory {
+    color: $white;
+  }
+  .c-qna {
+    color: $white;
+  }
+  .c-together {
+    color: $white;
+  }
+}

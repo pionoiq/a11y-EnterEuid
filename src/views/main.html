@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wilih=device-wilih, initial-scale=1.0" />
+    <title>메인 페이지</title>
+    <link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+
+  <body>
+    <!-- 메인 해더 -->
+    <header class="mainHeader">
+      <h1 class="a11yHidden">메인 헤더 바</h1>
+      <ul class="mainHeader__list">
+        <li class="mainHeader__item">
+          <h2 class="mainHeader__local">남가좌제2동</h2>
+          <div role="button" class="mainHeader__toggle">
+            <img src="../images/main-icon-direction.svg" alt="지역 더보기" />
+          </div>
+        </li>
+        <li class="mainHeader__item">
+          <a href="search.html" class="mainHeader__localSearch"> <img src="../images/search.svg" alt="검색" /></a>
+          <span role="button" tabindex="0" class="mainHeader__hamburger"> <img src="../images/main-hamburger-btn.svg" alt="햄버거 버튼" /></span>
+          <span role="button" tabindex="0" class="mainHeader__alarm"><img src="../images/main-icon-alram-bell.svg" alt="알람버튼" /></span>
+        </li>
+      </ul>
+    </header>
+    <!-- 내비게이션 -->
+    <nav class="nav">
+      <h2 class="a11yHidden">내비게이션 바</h2>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="main.html" class="nav__link"><img src="../images/common-icon-full-home.svg" alt="홈" /><span class="nav__name">홈</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="board.html" class="nav__link"><img src="../images/common-icon-file.svg" alt="게시판" /><span class="nav__name">게시판</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="exchange.html" class="nav__link"><img src="../images/common-icon-map.svg" alt="내 근처" /><span class="nav__name">내 근처</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="chatList.html" class="nav__link"><img src="../images/common-icon-my.svg" alt="채팅" /><span class="nav__name">채팅</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="profile.html" class="nav__link"><img src="../images/common-icon-chat.svg" alt="나의 이듬" /><span class="nav__name">나의 이듬</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="mainPage">
+      <!-- 메인 배너 -->
+      <section class="banner">
+        <h2 class="a11yHidden">배너</h2>
+        <div class="banner">
+          <ul class="banner__list">
+            <li class="banner__item">
+              <a href="#" class="banner__link">
+                <p class="banner__title"><span>풀리지 않는 버그 속</span><span>개발자로 살아남기</span></p>
+                <span class="banner__more">자세히 보기</span>
+              </a>
+            </li>
+            <li class="banner__item">
+              <a href="#" class="banner__link">
+                <p class="banner__title"><span>풀리지 않는 버그 속</span><span>개발자로 살아남기</span></p>
+                <span class="banner__more">자세히 보기</span>
+              </a>
+            </li>
+            <li class="banner__item">
+              <a href="#" class="banner__link">
+                <p class="banner__title"><span>풀리지 않는 버그 속</span><span>개발자로 살아남기</span></p>
+                <span class="banner__more">자세히 보기</span>
+              </a>
+            </li>
+          </ul>
+          <div class="counterBar">
+            <span class="counterBar__bar firstNum">01</span>
+            <span class="counterBar__bar">───</span>
+            <span tabindex="0" class="counterBar__bar lastNum">03</span>
+          </div>
+        </div>
+      </section>
+      <!-- 메인 콘텐츠 카테고리 -->
+      <section class="mainCategory">
+        <h2 class="a11yHidden">메인 콘텐츠 카테고리</h2>
+        <ul class="mainCategory__list">
+          <li class="mainCategory__item"><a href="main.html" class="mainCategory__link c-seniorsStory">선배님 스토리</a></li>
+          <li class="mainCategory__item"><a href="exchange.html" class="mainCategory__link">기기 거래</a></li>
+          <li class="mainCategory__item"><a href="#" class="mainCategory__link">질의 응답</a></li>
+          <li class="mainCategory__item"><a href="#" class="mainCategory__link">같이 해요</a></li>
+        </ul>
+      </section>
+      <!-- 선배님 스토리 -->
+      <section class="seniorsStory">
+        <h2 class="a11yHidden">선배님 스토리</h2>
+        <ul class="seniorsStory__list">
+          <li class="seniorsStory__item">
+            <a href="#">
+              <figure class="seniorsStory__fig">
+                <img aria-labelledby="PCY-story" src="https://via.placeholder.com/138x104/919191/ffffff/" alt="임시 이미지" />
+                <figcaption class="a11yHidden" id="PCY-story">UXUI 1기 수강생 박치열이 인터뷰를 하며 블라블라</figcaption>
+              </figure>
+              <p class="seniorsStory__description"><span>디자인에 대해 하나도 알지 못했던</span> <span>내가 취업할 수 있었던 이유</span></p>
+              <ul class="seniorsStory__category">
+                <li class="seniorsStory__course">UXUI</li>
+                <li class="seniorsStory__Separator" aria-hidden="true">|</li>
+                <li class="seniorsStory__group">1기 수강생&nbsp;</li>
+                <li class="seniorsStory__name">박치열</li>
+              </ul>
+            </a>
+          </li>
+          <li class="seniorsStory__item">
+            <a href="#">
+              <figure>
+                <img aria-labelledby="KJU-story" src="https://via.placeholder.com/138x104/919191/ffffff/" alt="선배님 스토리 콘텐츠1" />
+                <figcaption class="a11yHidden" id="KJU-story"></figcaption>
+              </figure>
+              <p class="seniorsStory__description"><span>영문과 전공생에서</span><span>UIUX 디자이너로 취업하기까지</span></p>
+              <ul class="seniorsStory__category">
+                <li class="seniorsStory__course">UXUI</li>
+                <li class="seniorsStory__Separator" aria-hidden="true">|</li>
+                <li class="seniorsStory__group">3기 수강생&nbsp;</li>
+                <li class="seniorsStory__name">김진우</li>
+              </ul>
+            </a>
+          </li>
+          <li class="seniorsStory__item">
+            <a href="#">
+              <figure>
+                <img aria-labelledby="KSS-story" src="https://via.placeholder.com/138x104/919191/ffffff/" alt="선배님 스토리 콘텐츠1" />
+                <figcaption class="a11yHidden" id="KSS-story"></figcaption>
+              </figure>
+              <p class="seniorsStory__description"><span>7기 수강생의 삼성으로 가는</span><span>피그마 노하우</span></p>
+              <ul class="seniorsStory__category">
+                <li class="seniorsStory__course">UXUI</li>
+                <li class="seniorsStory__Separator" aria-hidden="true">|</li>
+                <li class="seniorsStory__group">7기 수강생&nbsp;</li>
+                <li class="seniorsStory__name">김삼성</li>
+              </ul>
+            </a>
+          </li>
+          <li class="seniorsStory__item">
+            <a href="#">
+              <figure>
+                <img aria-labelledby="KHH-story" src="https://via.placeholder.com/138x104/919191/ffffff/" alt="선배님 스토리 콘텐츠1" />
+                <figcaption class="a11yHidden" id="KHH-story"></figcaption>
+              </figure>
+              <p class="seniorsStory__description"><span>배울 때 내가 가장 힘들었던 A-Z</span><span>야 너도 할수 있어!</span></p>
+              <ul class="seniorsStory__category">
+                <li class="seniorsStory__course">UXUI</li>
+                <li class="seniorsStory__Separator" aria-hidden="true">|</li>
+                <li class="seniorsStory__group">4기 수강생&nbsp;</li>
+                <li class="seniorsStory__name">김환휘</li>
+              </ul>
+            </a>
+          </li>
+          <li class="seniorsStory__item">
+            <a href="#">
+              <figure>
+                <img aria-labelledby="CHS-story" src="https://via.placeholder.com/138x104/919191/ffffff/" alt="선배님 스토리 콘텐츠1" />
+                <figcaption class="a11yHidden" id="CHS-story"></figcaption>
+              </figure>
+              <p class="seniorsStory__description"><span>나는 프론트일까? 백일까?</span><span>여전히 모르겠다면 물어봐!</span></p>
+              <ul class="seniorsStory__category">
+                <li class="seniorsStory__course">UXUI</li>
+                <li class="seniorsStory__Separator" aria-hidden="true">|</li>
+                <li class="seniorsStory__group">2기 수강생&nbsp;</li>
+                <li class="seniorsStory__name">최혜수</li>
+              </ul>
+            </a>
+          </li>
+          <li class="seniorsStory__item">
+            <a href="#">
+              <figure>
+                <img aria-labelledby="YJH-story" src="https://via.placeholder.com/138x104/919191/ffffff/" alt="선배님 스토리 콘텐츠1" />
+                <figcaption class="a11yHidden" id="YJH-story"></figcaption>
+              </figure>
+              <p class="seniorsStory__description"><span>코딩과 디자인의 그 어딘가</span><span>두가지 모두 하고 싶은 욕심쟁이</span></p>
+              <ul class="seniorsStory__category">
+                <li class="seniorsStory__course">UXUI</li>
+                <li class="seniorsStory__Separator" aria-hidden="true">|</li>
+                <li class="seniorsStory__group">5기 수강생&nbsp;</li>
+                <li class="seniorsStory__name">염진희</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

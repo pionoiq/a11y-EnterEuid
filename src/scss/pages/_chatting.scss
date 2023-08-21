@@ -1,0 +1,228 @@
+@use "./../utils" as *;
+
+// 판매 물품 정보
+.selling {
+  border-bottom: 0.3px solid $contentSecondary;
+
+  &__info {
+    @include flexbox($justify: flex-start);
+    gap: 8px;
+    @include paddingX(12px, 12px);
+    @include paddingY(12px, 6px);
+
+    &__preview {
+      width: rem(34px);
+      height: rem(34px);
+    }
+
+    &__previewImg {
+      @include profileRatio;
+      @include respons;
+      @include fit;
+      border-radius: 4px;
+    }
+
+    &__wrapping {
+      font-size: $fs11;
+      @include flexbox($direction: column, $justify: space-around);
+    }
+
+    &__state {
+      font-weight: $fw600;
+      margin-right: rem(5px);
+    }
+
+    &__price {
+      font-weight: $fw600;
+    }
+  }
+
+  &__buttonWrapper {
+    @include paddingX(12px, 12px);
+    @include paddingY(4px, 8px);
+  }
+
+  &__button {
+    height: rem(29px);
+    font-size: $fs11;
+    @include paddingX(11px, 12px);
+    @include paddingY(6px, 6px);
+    background-color: $white;
+    border-radius: 6px;
+    border: 1px solid $contentSecondary;
+    margin-right: rem(4px);
+  }
+
+  .schedule {
+    background: url("./../images/board-icon-calender.svg") 0 0 / 12px no-repeat;
+    padding-left: rem(16px);
+  }
+
+  .remit {
+    background: url("./../images/board-icon-won.svg") 0 0 / 12px no-repeat;
+    padding-left: rem(16px);
+  }
+}
+
+// 채팅 화면
+.chatting {
+  height: 80vh;
+  @include paddingX(12px, 12px);
+  @include paddingY(8px, 90px);
+
+  &__notic {
+    @include paddingX(16px, 16px);
+    @include paddingY(12px, 12px);
+    font-size: $fs11;
+    color: $white;
+    line-height: $lh160;
+    background: $bluelight;
+    border-radius: 10px;
+    margin-bottom: rem(8px);
+
+    &__strong {
+      font-weight: $fw600;
+    }
+
+    &__detail {
+      text-decoration: underline;
+    }
+  }
+
+  &__content {
+    @include flexbox($direction: column, $justify: flex-start, $items: center);
+    margin-top: rem(6px);
+
+    &__date {
+      @include marginY(4px, 4px);
+    }
+
+    &__myWrap {
+      @include flexbox(
+        $direction: column,
+        $justify: flex-start,
+        $items: flex-end
+      );
+    }
+
+    &__myMessage {
+      @include flexbox(
+        $direction: row-reverse,
+        $justify: flex-start,
+        $items: flex-end
+      );
+    }
+
+    &__myBubble {
+      @include paddingX(14px, 14px);
+      background: $bluelight;
+      color: $white;
+      margin-left: rem(2px);
+    }
+
+    &__sellerWrap {
+      @include flexbox(
+        $direction: column,
+        $justify: flex-start,
+        $items: flex-start
+      );
+    }
+
+    &__sellerMessage {
+      @include flexbox($justify: flex-start, $items: flex-end);
+    }
+
+    &__sellerBubble {
+      @include paddingX(20px, 20px);
+      background: $bluegray;
+      margin-right: rem(2px);
+      max-width: 85%;
+    }
+
+    &__sellerTime {
+      color: $bluegray;
+      font-size: $fs11;
+    }
+
+    .accent {
+      color: $contentSecondary;
+      font-size: $fs11;
+    }
+
+    .messageWrap {
+      width: 100%;
+      @include marginY(8px, 8px);
+      gap: 8px;
+    }
+
+    .bubble {
+      @include paddingY(8px, 8px);
+      line-height: $lh160;
+      border-radius: 20px;
+    }
+  }
+}
+
+// 메세지 입력 창
+.messageForm {
+  width: 100%;
+  background: $background;
+  position: sticky;
+  bottom: 0;
+  @include paddingX(8px, 8px);
+  @include paddingY(20px, 30px);
+
+  &__container {
+    @include flexbox($items: center);
+    gap: rem(6px);
+  }
+
+  &__plus {
+    background: url("./../../images/chat-icon-plus.svg") no-repeat;
+    width: rem(26px);
+    height: rem(26px);
+  }
+
+  &__input {
+    @include flexbox($justify: flex-start, $items: center);
+    gap: rem(6px);
+    position: relative;
+    flex-grow: 1;
+
+    &__text {
+      @include paddingX(12px, 12px);
+      @include paddingY(8px, 8px);
+      border-radius: 20px;
+      border: 0;
+      background: $bluegray;
+      line-height: $lh160;
+      flex-grow: 1;
+    }
+
+    &__text:focus {
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+    }
+
+    &__emoji {
+      background: url("./../../images/chat-icon-smile.svg") no-repeat;
+      width: rem(20px);
+      height: rem(20px);
+      position: absolute;
+      top: rem(9px);
+      right: rem(35px);
+    }
+
+    &__send {
+      background: url("./../../images/chat-icon-send.svg") no-repeat;
+      width: rem(18px);
+      height: rem(18px);
+    }
+  }
+
+  .messageButton {
+    border: 0;
+    background-color: transparent;
+  }
+}

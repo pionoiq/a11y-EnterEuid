@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채팅</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="callHeader">
+        <div class="callHeader__column">
+          <a href="chatList.html" class="back"><img src="./../images/icon-direction-left.svg" alt="뒤로가기" /></a>
+        </div>
+        <div class="headerTitle callHeader__column">
+          <span class="headerTitle__name">카페인조아</span>
+          <span class="headerTitle__info">보통 3일 내 응답</span>
+        </div>
+        <div class="moreWrapper callHeader__column">
+          <a href="#" class="call"><img src="./../images/qa-icon-call.svg" alt="전화걸기" /></a>
+          <a href="#" class="more"><img src="./../images/more.svg" alt="더보기" /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="chatMain">
+      <section class="selling">
+        <h1 class="a11yHidden">판매자의 정보</h1>
+        <div class="selling__info">
+          <figure class="selling__info__preview">
+            <img src="./../images/product-small.png" alt="" class="selling__info__previewImg" aria-labelledby="selling__info__previewCap" />
+            <figcaption id="selling__info__previewCap" class="selling__info__previewCap a11yHidden">판매 중인 제품 이미지</figcaption>
+          </figure>
+          <div class="selling__info__wrapping">
+            <div class="selling__info__title">
+              <span class="selling__info__state">판매중</span>
+              <span class="selling__info__product">intel mac 2017</span>
+            </div>
+            <span class="selling__info__price">800,000원</span>
+          </div>
+        </div>
+        <div class="selling__buttonWrapper">
+          <button type="button" class="selling__button">
+            <span class="schedule">약속 잡기</span>
+          </button>
+          <button type="button" class="selling__button">
+            <span class="remit">송금 하기</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="chatting">
+        <h1 class="a11yHidden">판매자와 채팅하기</h1>
+        <div class="chatting__notic">
+          <span class="chatting__notic__strong">💸 카페인조아님은 우수판매자에요.</span>
+          <span>개인정보유도와 명예훼손 내용은 차단될 수 있어요. </span>
+          <a href="#" class="chatting__notic__detail">자세히 보기</a>
+        </div>
+        <div class="chatting__content">
+          <time class="chatting__content__date accent" datetime="2023-02-21">2023년 2월 21일</time>
+          <div class="chatting__content__myWrap messageWrap">
+            <div class="chatting__content__myMessage">
+              <span class="chatting__content__myBubble bubble">가격 네고 가능한가요?</span>
+              <time class="chatting__content__myTime accent" datetime="2023-02-21 16:30:00">오후 4:30</time>
+            </div>
+            <div class="chatting__content__myMessage">
+              <span class="chatting__content__myBubble bubble">목요일 거래 가능할까요?</span>
+              <time class="chatting__content__myTime accent" datetime="2023-02-21 17:32:00">오후 5:32</time>
+            </div>
+            <div class="chatting__content__myMessage">
+              <span class="chatting__content__myBubble bubble">판매 안하시나요?</span>
+              <time class="chatting__content__myTime accent" datetime="2023-02-21 21:16:00">오후 9:16</time>
+            </div>
+          </div>
+          <time class="chatting__content__date accent" datetime="2023-03-06 18:14:00">2023년 3월 6일</time>
+          <div class="chatting__content__sellerWrap messageWrap">
+            <div class="chatting__content__sellerMessage">
+              <span class="chatting__content__sellerBubble bubble"
+                >죄송해요ㅠㅠ 제가 핸드폰을 바꿔서 지금 봤네요ㅠㅠ 팡매는 안됐는데 먼저 연락하신분이 있어서 답장 기다리고 있습니다 ㅠㅠ</span
+              >
+              <time class="chatting__content__sellerTime" datetime="2023-03-06 18:14:00">오후 7:14</time>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <form action="#" method="post" class="messageForm">
+        <fieldset>
+          <legend class="a11yHidden">메세지 보내기</legend>
+          <div class="messageForm__container">
+            <button type="button" class="messageForm__plus messageButton" aria-label="콘텐츠 첨부 버튼"></button>
+            <div class="messageForm__input">
+              <label for="inputMessage" class="a11yHidden">메세지 입력창</label>
+              <input type="text" id="inputMessage" placeholder="메세지 보내기" name="inputMessage" class="messageForm__input__text" />
+              <button type="button" class="messageForm__input__emoji messageButton" aria-label="이모티콘 첨부 버튼"></button>
+              <button type="submit" class="messageForm__input__send messageButton" aria-label="보내기 버튼"></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

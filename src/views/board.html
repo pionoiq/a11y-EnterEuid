@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <title>Board</title>
+  </head>
+
+  <body>
+    <section class="boardFrame">
+      <h2 class="a11yHidden">게시판</h2>
+      <div class="buttonGroup">
+        <button class="button button__tagselect">
+          <span class="button__span">주제</span>
+        </button>
+        <button class="button button__tagselect">인기글</button>
+        <button class="button button__tagselect">같이해요</button>
+        <button class="button button__tagselect">질의응답</button>
+        <button class="button button__tagselect">자유게시판</button>
+      </div>
+      <ul class="postFrame">
+        <li class="post">
+          <div class="post__board">
+            <span class="post__tag">같이해요</span>
+            <h2 class="post__title post__Join">Youtube 클론 프젝 같이 하실분~!</h2>
+            <div class="postSub">
+              <span class="post__text post__join"> 누구나 참여가능</span>
+              <span class="post__text post__time"> 내일, 오후 7:00능</span>
+              <span class="post__info">응암 제3동 &middot; 9분 전</span>
+            </div>
+            <span class="post__people">1/3명</span>
+          </div>
+        </li>
+        <li class="post">
+          <div class="post__board">
+            <span class="post__tag">질의응답</span>
+            <h2 class="post__title">아니 디버깅 돌려봤는데도 왜 이러냐?</h2>
+            <p class="post__text">내가 혼자 게임 만들려고 코드 짰는ㄷㅔ 왜 작동 안되는거냐</p>
+          </div>
+          <figure class="post__thum">
+            <img src="./../images/postthum.svg" alt="" class="post__thumImg" aria-labelledby="post__thum" />
+            <figcaption id="post__thum" class="a11yHidden">미리보기 이미지</figcaption>
+          </figure>
+          <span class="post__info">연희동 &middot; 49분 전 &middot; 조회 4</span>
+        </li>
+        <li class="post">
+          <div class="post__board">
+            <span class="post__tag">질의응답</span>
+            <h2 class="post__title">깊은 복사 얕은 복사의 차이를 모르겠어...</h2>
+            <p class="post__text">제가 이해한 내용은 얕은 복사는 메모리를 공유하는 거 잖아요?</p>
+          </div>
+
+          <span class="post__info">남가좌동 &middot; 15분 전 &middot; 조회 12</span>
+        </li>
+        <li class="post">
+          <div class="post__board">
+            <span class="post__tag">질의응답</span>
+            <h2 class="post__title">CSS flex 중앙정렬 justify-content 말고 또 뭐였더라?</h2>
+            <p class="post__text">figma보고 코드 짰는데 기억이 안나네;;;;</p>
+          </div>
+          <span class="post__info">남가좌 제2동 &middot; 1일 전 &middot; 조회 3</span>
+        </li>
+        <li class="post">
+          <div class="post__board">
+            <span class="post__tag">자유게시판</span>
+            <h2 class="post__title">오늘 점심 뭐먹? 점메추~~~</h2>
+            <p class="post__text">코드 공부하다 연희동 근처에서 밥 먹을건데 점메추~~~</p>
+          </div>
+          <figure class="post__thum">
+            <img src="./../images/postthum.svg" alt="" class="post__thumImg" aria-labelledby="post__thum" />
+            <figcaption id="post__thum2" class="a11yHidden">미리보기 이미지</figcaption>
+          </figure>
+          <span class="post__info">연희동 &middot; 49분 전 &middot; 조회 4</span>
+        </li>
+        <li class="post">
+          <div class="post__board">
+            <span class="post__tag">자유게시판</span>
+            <h2 class="post__title">오늘 점심 뭐먹? 점메추~~~</h2>
+            <p class="post__text">코드 공부하다 연희동 근처에서 밥 먹을건데 점메추~~~</p>
+          </div>
+          <figure class="post__thum">
+            <img src="./../images/postthum.svg" alt="" class="post__thumImg" aria-labelledby="post__thum" />
+            <figcaption id="post__thum3" class="a11yHidden">미리보기 이미지</figcaption>
+          </figure>
+          <span class="post__info">연희동 &middot; 49분 전 &middot; 조회 4</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 내비게이션 -->
+    <nav class="nav">
+      <h2 class="a11yHidden">내비게이션 바</h2>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="main.html" class="nav__link"><img src="../images/home.svg" alt="홈" /><span class="nav__name">홈</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="board.html" class="nav__link"><img src="../images/icon-full-file.svg" alt="게시판" /><span class="nav__name">게시판</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="exchange.html" class="nav__link"><img src="../images/common-icon-map.svg" alt="내 근처" /><span class="nav__name">내 근처</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="chatList.html" class="nav__link"><img src="../images/common-icon-my.svg" alt="채팅" /><span class="nav__name">채팅</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="profile.html" class="nav__link"><img src="../images/common-icon-my.svg" alt="나의 이듬" /><span class="nav__name">나의 이듬</span></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

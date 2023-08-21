@@ -1,0 +1,69 @@
+@use "./../utils" as *;
+@use "../components/button" as *;
+
+.exchange {
+  @include navBottom;
+  &__item {
+    position: relative;
+    @include padding(12);
+  }
+  &__item:not(:last-child) {
+    border-bottom: 1px solid $gray;
+  }
+  &__link {
+    @include flexbox($justify: flex-start, $items: center);
+  }
+
+  &__img {
+    @include paddingX(0, 12px);
+  }
+
+  &__img img {
+    border-radius: 8px;
+  }
+
+  &__title {
+    line-height: $lh160;
+  }
+  &__local {
+    font-size: $fs11;
+    line-height: $lh160;
+    color: $contentTertiary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__status {
+    @include paddingY(2, 0);
+  }
+  &__reservation {
+    @include paddingXY(2, 4);
+    border-radius: 4px;
+    background: $tertiary;
+    color: $white;
+  }
+  &__doneDeal {
+    @include paddingXY(2, 4);
+    border-radius: 4px;
+    background: $contentTertiary;
+    color: $white;
+  }
+  &__price {
+    line-height: $lh150;
+    font-weight: $fw600;
+  }
+  &__like {
+    background: transparent;
+    position: absolute;
+    right: rem(12px);
+    bottom: rem(6px);
+    border: 0;
+  }
+  &__like:hover {
+    cursor: pointer;
+  }
+  .dot {
+    font-size: 15px;
+    @include paddingXY(0, 2);
+  }
+}

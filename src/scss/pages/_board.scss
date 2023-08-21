@@ -1,0 +1,110 @@
+@use "./../utils" as *;
+@use "./../components" as *;
+
+.boardFrame {
+  @include containerMax(320px);
+  @include navBottom;
+}
+
+.button__span {
+  padding-left: 16px;
+  background: url("./../../images/main-icon-hamburger.svg") -3px -3px no-repeat;
+}
+
+.button__tagselect {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  font-size: 10px;
+  padding: 6px 10px;
+  background: $white;
+  border: 1px solid $contentTertiary;
+  border-radius: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  padding: 48px 0 8px 0;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.3px solid $contentTertiary;
+}
+
+.post {
+  position: relative;
+  padding: 12px;
+  border-bottom: 0.3px solid $contentTertiary;
+
+  &__tag {
+    display: inline-block;
+    background: #c4c7d2;
+    font-weight: 600;
+    color: $white;
+    padding: 0px 4px;
+    border-radius: 4px;
+    gap: 2px;
+    font-size: 10.503px;
+    line-height: 150%;
+  }
+
+  &__text {
+    width: 190px;
+    height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: $contentTertiary;
+    font-size: 10.503px;
+  }
+
+  &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 160%;
+    width: 190px;
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  &__time {
+    padding-left: 16px;
+    background: url("./../../images/board-board-board-icon-calender.svg") 0 -2.1px no-repeat;
+  }
+
+  &__join {
+    padding-left: 16px;
+    background: url("./../../images/board-board-board-icon-fullpeople.svg") 0 -2.1px no-repeat;
+  }
+
+  &__people {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: $contentTertiary;
+    font-size: 10px;
+    padding-left: 16px;
+    right: 12px;
+    bottom: 12px;
+    background: url("./../../images/board-board-icon-people.svg") 0 -2.1px no-repeat;
+  }
+
+  &__thum {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+
+  .postSub {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__info {
+    color: $contentTertiary;
+    font-size: 10.53px;
+    line-height: 160%;
+  }
+}

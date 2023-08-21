@@ -1,0 +1,109 @@
+@use './../utils' as *;
+@use './../components' as *;
+
+.categoryContainer {
+  @include containerMax(320px);
+  @include flexbox(column, center, center);
+}
+
+
+.search__Form {
+  @include flexbox($items: center);
+  gap: rem(16px);
+
+}
+
+.search__bar {
+  width: 100%;
+  background: $background;
+  @include paddingX(12px, 12px);
+  @include paddingY(4px, 8px);
+}
+
+.searchForm {
+  border: none;
+  width: 100%;
+}
+
+.searchContainer{
+  position: relative;
+
+}
+.go__back{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background: url("./../../images/icon-direction-left.svg") no-repeat;
+  background-color: transparent;
+}
+
+.input {
+  @include paddingX(10px, 10px);
+  @include paddingY(4px, 4px);
+  border-radius: 8px;
+  border: 0;
+  background: $bluegray;
+  line-height: $lh160;
+  flex-grow: 1;
+}
+
+.announce__category {
+  font-size: 18px;
+}
+
+.buttonText {
+  display: flex;
+  flex-flow: column;
+}
+
+.button__Group {
+  @include flexbox();
+  padding: 16px;
+  gap: 8px;
+}
+
+.button__select {
+  width: 100%;
+  height: rem(36px);
+  font-weight: $fw700;
+  line-height: $lh140;
+  text-align: center;
+  margin-top: 3px;
+  padding: 5px;
+}
+
+.button__category {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  width: 143px;
+  height: 61px;
+  border: none;
+  background: url("./../../images/plus.svg") 110px 20px no-repeat $gray;
+  color: $black;
+
+  &:focus {
+    background-color: $primary;
+    color: $white;
+    background: url("./../../images/check.svg") 110px 20px no-repeat$primary;
+  }
+
+  &:active {
+    background: url("./../../images/check.svg") 110px 20px no-repeat $primary;
+    color: $white;
+  }
+
+}
+
+.categoryType {
+  color: #E9E9E9;
+  font-size: 0.65644rem;
+  margin-bottom: 3px;
+}
+
+.button__save {
+  width: 100%;
+  height: rem(36px);
+  font-weight: $fw700;
+  line-height: $lh140;
+}
