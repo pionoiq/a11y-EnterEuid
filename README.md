@@ -2,9 +2,7 @@
 
 
 
-<h3>멋쟁이 사자처럼 6기 🦁
-  <img src="https://github.com/201810902/study/assets/55738193/add95e49-4032-412e-937c-ece95daee4a9" width=30px>
-</h3>
+<h3>멋쟁이 사자처럼 6기 🦁</h3>
 
 <b>&nbsp;&nbsp;-----팀 A11Y-----</b><br />
 <a href="https://github.com/minomad/a11y-EnterEuid">@A11y</a>
